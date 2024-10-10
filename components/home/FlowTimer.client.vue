@@ -52,7 +52,7 @@ function clearTimer() {
 </script>
 
 <template>
-  <div class="bg-transparent py-4">
+  <div class="py-4">
     <h2 class="text-xl">Flow Timer</h2>
     <div
       class="text-base sm:text-4xl transition-color duration-300"
@@ -69,5 +69,3 @@ function clearTimer() {
     </button>
   </div>
 </template>
-
-<style scoped></style>
