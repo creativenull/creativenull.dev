@@ -10,9 +10,9 @@ useHead({ title: "CreativeNull / Home" });
     class="text-defaults px-2 sm:px-0 pt-[3.5rem] font-departure min-h-[100vh] container mx-auto grid grid-cols-1 sm:grid-cols-2 gap-2"
   >
     <div class="space-y-4">
-      <DashboardCurrentTime />
-      <DashboardWeatherReport />
-      <DashboardFlowTimer />
+      <HomeCurrentTime />
+      <HomeWeatherReport />
+      <HomeFlowTimer />
     </div>
     <div class="space-y-4">
       <div class="space-y-4">
@@ -47,5 +47,5 @@ useHead({ title: "CreativeNull / Home" });
     </div>
   </main>
 
-  <DashboardFooter />
+  <HomeFooter />
 </template>
