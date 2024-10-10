@@ -1,5 +1,6 @@
 <script setup lang="ts">
-definePageMeta({ layout: "dashboard" });
+definePageMeta({ layout: "dashboard", });
+useHead({ title: "CreativeNull / Home" });
 </script>
 
 <template>
