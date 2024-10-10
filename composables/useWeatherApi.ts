@@ -1,0 +1,58 @@
+const weatherApiUrl = "https://wttr.in/Port%20of%20Spain?format=3&m";
+const weatherStorageKey = "app:wttr_data";
+const weatherStorageExpiresKey = "app:wttr_data:expires_at";
+const weatherTTL = 1000 * 60 * 60;
+
+function getCachedWeather() {
+  const item = localStorage.getItem(weatherStorageKey);
+  const expiresAt = localStorage.getItem(weatherStorageExpiresKey);
+
+  if (!item || !expiresAt) {
+    return null;
+  }
+
+  if (new Date().getTime() > Number(expiresAt)) {
+    localStorage.removeItem(weatherStorageKey);
+    localStorage.removeItem(weatherStorageExpiresKey);
+
+    return null;
+  }
+
+  return item;
+}
+
+async function _fetchWeather(): Promise<string | null> {
+  const cached = getCachedWeather();
+
+  if (cached) {
+    return cached;
+  }
+
+  const data = await $fetch<string>(weatherApiUrl);
+
+  localStorage.setItem(weatherStorageKey, data);
+  localStorage.setItem(
+    weatherStorageExpiresKey,
+    (new Date().getTime() + weatherTTL).toString(),
+  );
+
+  return data;
+}
+
+export function useWeatherApi() {
+  const weather = ref<string | null>(null);
+  const status = ref<"pending" | "success" | "error">("pending");
+
+  async function fetchWeather() {
+    status.value = "pending";
+    weather.value = await _fetchWeather();
+
+    if (weather.value) {
+      status.value = "success";
+    } else {
+      status.value = "error";
+    }
+  }
+
+  return { weather, status, fetchWeather };
+}
