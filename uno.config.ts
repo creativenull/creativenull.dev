@@ -19,41 +19,35 @@ export default defineConfig({
     presetIcons(),
     presetTypography({
       cssExtend: {
-        strong: { "font-weight": "bold" },
-        "pre code": { "font-family": "JetBrains Mono, monospace" },
-        "code::before, code::after": {
-          content: "''",
+        strong: {
+          "--at-apply": "font-bold",
         },
-        "p code": {
-          "font-family": "JetBrains Mono, monospace",
-          padding: "0 5px",
+        pre: {
+          "--at-apply": "border border-gray-700 dark:border-white",
         },
-        "ol code": {
-          "font-family": "JetBrains Mono, monospace",
-          padding: "0 5px",
+        "pre code": {
+          "--at-apply": "font-jetbrains",
         },
-        "ul code": {
-          "font-family": "JetBrains Mono, monospace",
-          padding: "0 5px",
+        "ol code, ul code, p code": {
+          "--at-apply": "font-jetbrains px-2",
         },
-        "a[href^=https]::after": {
-          "font-size": "10px",
-          content: '"\\f08e"',
-          "font-family": "FontAwesome",
-          display: "inline-block",
-          "padding-left": "5px",
+        a: {
+          "--at-apply": "transition duration-200 hover:text-sky-600",
         },
         "section[data-footnotes]": {
-          "font-size": "0.75rem",
+          "--at-apply": "text-xs",
         },
         "p sup": {
-          "padding-left": "0.1rem",
+          "--at-apply": "pl-2",
         },
         "p sup::before": {
           content: '"\\005B"',
         },
         "p sup::after": {
           content: '"\\005D"',
+        },
+        "ul, ol": {
+          "--at-apply": "ml-2",
         },
       },
     }),
