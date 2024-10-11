@@ -18,7 +18,7 @@ onMounted(() => (loaded.value = true));
       <HomeFlowTimer />
       <HomeTasks />
     </div>
-    <div class="space-y-4">
+    <div class="space-y-4 mb-4">
       <Transition name="fade-slide">
         <HomeAboutMe v-if="loaded" />
       </Transition>

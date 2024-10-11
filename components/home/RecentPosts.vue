@@ -1,33 +1,42 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+function truncated(description: string) {
+  return description.length > 80
+    ? description.slice(0, 80) + "..."
+    : description + "...";
+}
+
+function humanReadableDate(date: string) {
+  return new Date(date).toLocaleDateString();
+}
+
+const query = {
+  path: "/posts",
+  where: [{ draft: false }],
+  limit: 3,
+  sort: [{ publishDate: -1 }],
+};
+</script>
 
 <template>
   <div class="space-y-4">
-    <h2 class="text-xl sm:text-3xl">My Recent Posts</h2>
-    <div class="font-roboto space-y-2">
-      <div>
-        <div class="flex items-center gap-2">
-          <a href="#" class="underline">
-            Amet voluptatem rerum molestias harum
-          </a>
-          <span class="text-sm">2024-01-01</span>
+    <h2 class="text-xl sm:text-3xl">My recent posts</h2>
+    <div class="font-roboto space-y-4">
+      <ContentList :query v-slot="{ list }">
+        <div v-for="post in list" :key="post._path" class="space-y-1">
+          <div class="text-lg">
+            <h2 class="inline-block">
+              <NuxtLink :to="post._path" class="underline">
+                {{ post.title }}
+              </NuxtLink>
+            </h2>
+            -
+            <span>{{ humanReadableDate(post.publishDate) }}</span>
+          </div>
+          <p class="text-sm">
+            {{ truncated(post.description) }}
+          </p>
         </div>
-        <p class="text-sm">
-          Adipisicing et quisquam excepturi repellat iusto Voluptatibus
-          veritatis dolorem nam dolorum placeat cumque? Voluptate non quibusdam
-          molestias laudantium ab laudantium?
-        </p>
-      </div>
-      <div>
-        <div class="flex items-center gap-2">
-          <a href="#" class="underline"> Amet ipsum omnis quos adipisci </a>
-          <span class="text-sm">2024-01-01</span>
-        </div>
-        <p class="text-sm">
-          Adipisicing et quisquam excepturi repellat iusto Voluptatibus
-          veritatis dolorem nam dolorum placeat cumque? Voluptate non quibusdam
-          molestias laudantium ab laudantium?
-        </p>
-      </div>
+      </ContentList>
     </div>
   </div>
 </template>
