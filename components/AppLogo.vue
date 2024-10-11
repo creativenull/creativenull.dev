@@ -3,10 +3,10 @@ withDefaults(defineProps<{ textClass?: string }>(), { textClass: "text-2xl" });
 </script>
 
 <template>
-  <div id="logo" :class="`${textClass} font-righteous`">
+  <NuxtLink to="/" id="logo" :class="`${textClass} font-righteous block`">
     <span id="logo-1" class="transition duration-300">Creative</span>
     <span id="logo-2" class="transition duration-300">Null</span>
-  </div>
+  </NuxtLink>
 </template>
 
 <style scoped lang="postcss">
