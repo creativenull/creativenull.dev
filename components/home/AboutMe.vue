@@ -7,3 +7,9 @@
     </section>
   </div>
 </template>
+
+<style scoped>
+.prose {
+  max-width: 100ch;
+}
+</style>
