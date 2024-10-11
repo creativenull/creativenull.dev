@@ -27,7 +27,7 @@ export default defineAppConfig({
         dateStyle: "short",
         timeStyle: "short",
         hour12: false,
-      },
+      } as Intl.DateTimeFormatOptions,
     },
   },
 });

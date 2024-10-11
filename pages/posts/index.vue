@@ -1,12 +1,10 @@
 <script setup lang="ts">
+const appConfig = useAppConfig();
+
 function truncated(description: string) {
   return description.length > 80
     ? description.slice(0, 80) + "..."
     : description + "...";
-}
-
-function humanReadableDate(date: string) {
-  return new Date(date).toLocaleDateString();
 }
 
 const query = {
@@ -33,7 +31,7 @@ const query = {
               </NuxtLink>
             </h2>
             -
-            <span>{{ humanReadableDate(post.publishDate) }}</span>
+            <span>{{ getLocaleDate(post.publishDate) }}</span>
           </div>
           <p class="text-sm">
             {{ truncated(post.description) }}
