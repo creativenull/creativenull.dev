@@ -23,7 +23,7 @@ export default defineConfig({
           "--at-apply": "font-bold",
         },
         pre: {
-          "--at-apply": "border border-gray-700 dark:border-white",
+          "--at-apply": "border border-gray-700 dark:border-gray-700",
         },
         "pre code": {
           "--at-apply": "font-jetbrains",
