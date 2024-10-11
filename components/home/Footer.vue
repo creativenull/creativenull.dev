@@ -6,7 +6,7 @@
       to="https://github.com/creativenull"
       target="_blank"
       tabindex="0"
-      class="underline"
+      class="underline rounded focus:(outline-none ring-1 ring-gray-800) dark:focus:(ring-white)"
       >creativenull</NuxtLink
     >) 2024
   </footer>

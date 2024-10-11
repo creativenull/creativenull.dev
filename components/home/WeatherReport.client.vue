@@ -18,8 +18,8 @@ onMounted(() => fetchWeather());
       <NuxtLink
         to="https://github.com/chubin/wttr.in"
         target="_blank"
-        class="underline"
         tabindex="0"
+        class="underline rounded focus:(outline-none ring-1 ring-gray-800) dark:focus:(ring-white)"
       >
         wttr.in
       </NuxtLink>

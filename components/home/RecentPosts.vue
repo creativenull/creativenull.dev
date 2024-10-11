@@ -25,7 +25,11 @@ const query = {
         <div v-for="post in list" :key="post._path" class="space-y-1">
           <div class="text-lg">
             <h2 class="inline-block">
-              <NuxtLink :to="post._path" class="underline">
+              <NuxtLink
+                :to="post._path"
+                class="underline rounded focus:(outline-none ring-1 ring-gray-800) dark:focus:(ring-white)"
+                tabindex="0"
+              >
                 {{ post.title }}
               </NuxtLink>
             </h2>
