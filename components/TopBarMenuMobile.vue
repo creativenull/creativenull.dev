@@ -31,6 +31,7 @@ onMounted(() => {
       :key="item.name"
       :to="item.link"
       :title="`navigate to ${item.name}`"
+      exact-active-class="underline text-sky-600"
       tabindex="0"
       class="capitalize hover:text-sky-600 transition duration-200 focus:(outline-none ring-1 ring-gray-800) dark:focus:(ring-white) rounded block p-2"
     >

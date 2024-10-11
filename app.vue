@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { loadingColor } = useLoadingIndicatorSetup()
+const { loadingColor } = useLoadingIndicatorSetup();
 </script>
 
 <template>
