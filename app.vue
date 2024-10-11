@@ -13,4 +13,42 @@ const { loadingColor } = useLoadingIndicatorSetup();
 body {
   @apply bg-gray-200 dark:bg-gray-900;
 }
+
+.fade-slide-enter-active,
+.fade-slide-leave-active {
+  transition: all 0.5s ease;
+}
+.fade-slide-delay-enter-active,
+.fade-slide-delay-leave-active {
+  transition: all 0.5s ease 0.1s;
+}
+
+.fade-slide-enter-from,
+.fade-slide-leave-to,
+.fade-slide-delay-enter-from,
+.fade-slide-delay-leave-to {
+  opacity: 0;
+  transform: translateY(5px);
+}
+
+.fade-slide-enter-to,
+.fade-slide-leave-from,
+.fade-slide-delay-enter-to,
+.fade-slide-delay-leave-from {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.75s ease;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+.fade-enter-to,
+.fade-leave-from {
+  opacity: 1;
+}
 </style>

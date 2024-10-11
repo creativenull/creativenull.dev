@@ -1,11 +1,5 @@
 <script setup lang="ts">
-const appConfig = useAppConfig();
-
-function truncated(description: string) {
-  return description.length > 80
-    ? description.slice(0, 80) + "..."
-    : description + "...";
-}
+useHead({ title: "CreativeNull / Posts" });
 
 const query = {
   path: "/posts",
@@ -15,7 +9,7 @@ const query = {
 </script>
 
 <template>
-  <main class="max-w-[65ch] mx-auto px-2 sm:px-0 pt-[4rem] space-y-4">
+  <div class="space-y-4">
     <h2 class="text-xl sm:text-3xl">Posts</h2>
     <div class="font-roboto space-y-4">
       <ContentList :query v-slot="{ list }">
@@ -34,10 +28,10 @@ const query = {
             <span>{{ getLocaleDate(post.publishDate) }}</span>
           </div>
           <p class="text-sm">
-            {{ truncated(post.description) }}
+            {{ getTruncatedDescription(post.description) }}
           </p>
         </div>
       </ContentList>
     </div>
-  </main>
+  </div>
 </template>
