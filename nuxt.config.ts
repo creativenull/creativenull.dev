@@ -10,4 +10,10 @@ export default defineNuxtConfig({
   compatibilityDate: "2024-10-05",
 
   css: ["@unocss/reset/tailwind-compat.css", "~/assets/css/departure-mono.css"],
+
+  content: {
+    highlight: {
+      langs: ["json", "js", "ts", "html", "css", "vue", "shell", "lua", "php"],
+    },
+  },
 });
