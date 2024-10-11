@@ -2,8 +2,9 @@
 definePageMeta({ layout: "dashboard" });
 useHead({ title: "CreativeNull / Home" });
 
-const loaded = useState('loaded', () => false)
+const loaded = useState("loaded", () => false);
 onMounted(() => (loaded.value = true));
+onUnmounted(() => (loaded.value = false));
 </script>
 
 <template>
