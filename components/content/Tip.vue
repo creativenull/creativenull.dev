@@ -9,7 +9,7 @@
 
 <script setup lang="ts">
 type TipType = "note" | "warning" | "outdated";
-const props = withDefaults(defineProps<{ tip: TipType }>(), { tip: "note" });
+const props = withDefaults(defineProps<{ tip?: TipType }>(), { tip: "note" });
 
 const variant = computed(() => {
   switch (props.tip) {
