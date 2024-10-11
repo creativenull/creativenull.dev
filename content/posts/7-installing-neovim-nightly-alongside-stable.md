@@ -54,7 +54,7 @@ cd $HOME/neovim
 
 Next we compile the source, let's keep it a `Release` type because our focus is using neovim and not developing it:
 
-```
+```sh
 make CMAKE_BUILD_TYPE=Release
 ```
 
@@ -67,7 +67,7 @@ Now we can also install the binary in a location of choice (by running
 `make CMAKE_INSTALL_PREFIX=/path/to/location install`, but I would prefer to just leave the binary at
 `build/bin/nvim` and work from there. The downside is that we will need to provide the runtime explicitly, so we run:
 
-```
+```sh
 VIMRUNTIME=runtime ./build/bin/nvim
 ```
 
