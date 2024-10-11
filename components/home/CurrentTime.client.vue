@@ -1,7 +1,7 @@
 <script setup lang="ts">
-const hours = ref("00");
-const minutes = ref("00");
-const timeInterval = ref<null | number>(null);
+const hours = useState("hours", () => "00");
+const minutes = useState("minutes", () => "00");
+const timeInterval = useState<number | null>("timeInterval", () => null);
 
 function updateCurentTime() {
   const date = new Date();

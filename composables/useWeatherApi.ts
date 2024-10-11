@@ -40,8 +40,8 @@ async function _fetchWeather(): Promise<string | null> {
 }
 
 export function useWeatherApi() {
-  const weather = ref<string | null>(null);
-  const status = ref<"pending" | "success" | "error">("pending");
+  const weather = useState<string | null>('weather', () => null);
+  const status = useState<'pending' | 'success' | 'error'>('status', () => 'pending');
 
   async function fetchWeather() {
     status.value = "pending";

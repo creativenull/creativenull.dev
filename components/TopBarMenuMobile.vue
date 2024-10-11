@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const appConfig = useAppConfig();
-const menuVisible = ref(false);
+const menuVisible = useState("menuVisible", () => false);
 
 onMounted(() => {
   window.addEventListener("resize", () => (menuVisible.value = false));

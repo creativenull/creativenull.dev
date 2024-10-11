@@ -12,10 +12,10 @@ const notifyEnd = useWebNotification({
   tag: "timer-ended",
 });
 
-const minutes = ref("00");
-const seconds = ref("00");
-const timeInterval = ref<null | number>(null);
-const running = ref(false);
+const minutes = useState("minutes", () => "00");
+const seconds = useState("seconds", () => "00");
+const timeInterval = useState<number | null>("timeInterval", () => null);
+const running = useState("running", () => false);
 
 function updateTimer() {
   if (seconds.value === "59") {
