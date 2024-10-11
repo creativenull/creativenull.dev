@@ -12,14 +12,13 @@ function humanReadableDate(date: string) {
 const query = {
   path: "/posts",
   where: [{ draft: false }],
-  limit: 3,
   sort: [{ publishDate: -1 }],
 };
 </script>
 
 <template>
-  <div class="space-y-4">
-    <h2 class="text-xl sm:text-3xl">My recent posts</h2>
+  <div class="max-w-[65ch] mx-auto px-2 sm:px-0 pt-[4rem] space-y-4">
+    <h2 class="text-xl sm:text-3xl">Posts</h2>
     <div class="font-roboto space-y-4">
       <ContentList :query v-slot="{ list }">
         <div v-for="post in list" :key="post._path" class="space-y-1">
