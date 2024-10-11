@@ -17,7 +17,7 @@ const query = {
 </script>
 
 <template>
-  <div class="max-w-[65ch] mx-auto px-2 sm:px-0 pt-[4rem] space-y-4">
+  <main class="max-w-[65ch] mx-auto px-2 sm:px-0 pt-[4rem] space-y-4">
     <h2 class="text-xl sm:text-3xl">Posts</h2>
     <div class="font-roboto space-y-4">
       <ContentList :query v-slot="{ list }">
@@ -41,5 +41,5 @@ const query = {
         </div>
       </ContentList>
     </div>
-  </div>
+  </main>
 </template>
