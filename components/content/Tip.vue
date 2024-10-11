@@ -14,24 +14,24 @@ const props = withDefaults(defineProps<{ tip: TipType }>(), { tip: "note" });
 const variant = computed(() => {
   switch (props.tip) {
     case "outdated":
-      return "border-l-red-500 dark:border-l-red-800";
+      return "border-l-red-500 dark:border-l-red-600";
     case "warning":
-      return "border-l-amber-500 dark:border-l-amber-800";
+      return "border-l-amber-500 dark:border-l-amber-600";
     case "note":
     default:
-      return "border-l-emerald-500 dark:border-l-emerald-800";
+      return "border-l-emerald-500 dark:border-l-emerald-600";
   }
 });
 
 const textColor = computed(() => {
   switch (props.tip) {
     case "outdated":
-      return "text-red-500 dark:text-red-800";
+      return "text-red-500 dark:text-red-600";
     case "warning":
-      return "text-amber-500 dark:text-amber-900";
+      return "text-amber-500 dark:text-amber-600";
     case "note":
     default:
-      return "text-emerald-500 dark:text-emerald-800";
+      return "text-emerald-500 dark:text-emerald-600";
   }
 });
 </script>
