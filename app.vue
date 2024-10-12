@@ -2,7 +2,13 @@
 const { loadingColor } = useLoadingIndicatorSetup();
 const appConfig = useAppConfig();
 
-useHead({ titleTemplate: (title) => `${title} / ${appConfig.site.title}` });
+useHead({
+  titleTemplate: (titleChunk) => {
+    return titleChunk
+      ? `${titleChunk} / ${appConfig.site.title}`
+      : appConfig.site.title;
+  },
+});
 </script>
 
 <template>
