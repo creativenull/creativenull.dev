@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ["@nuxt/content", "@unocss/nuxt", "@vueuse/nuxt"],
+  modules: ["@nuxt/content", "@unocss/nuxt", "@vueuse/nuxt", "@nuxt/image"],
 
   routeRules: {
     "/": { prerender: true },
