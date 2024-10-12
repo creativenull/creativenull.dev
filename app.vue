@@ -1,5 +1,8 @@
 <script setup lang="ts">
 const { loadingColor } = useLoadingIndicatorSetup();
+const appConfig = useAppConfig();
+
+useHead({ titleTemplate: (title) => `${title} / ${appConfig.site.title}` });
 </script>
 
 <template>

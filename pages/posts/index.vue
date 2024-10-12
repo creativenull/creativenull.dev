@@ -1,5 +1,5 @@
 <script setup lang="ts">
-useHead({ title: "CreativeNull / Posts" });
+useHead({ title: "Posts" });
 
 const query = {
   path: "/posts",

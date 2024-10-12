@@ -1,6 +1,6 @@
 <script setup lang="ts">
 definePageMeta({ layout: "dashboard" });
-useHead({ title: "CreativeNull / Home" });
+useHead({ title: "Home" });
 const { loaded } = useFadeSlideLoadingState();
 </script>
 
