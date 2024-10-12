@@ -20,8 +20,7 @@ There has been a lot of tutorials on setting up vim for a Python/JavaScript/Java
 So after a bit of digging and a lot of frustration on how limited resources there were, I finally found some useful resources that I was able to put together and have it working. Here are my findings and how I was able to get myself up and running for my requirements. The development board I will be using is the TI TM4C129EXL microcontroller, but the steps on setup is very similiar for other microcontrollers like other TI, STM manufacturers. Here is a picture.
 
 <img
-  class="mx-auto"
-  width="100%"
+  class="mx-auto w-full"
   src="http://image.itmedia.co.jp/edn/articles/1509/27/ts150925_TI01.jpg"
 />
 
