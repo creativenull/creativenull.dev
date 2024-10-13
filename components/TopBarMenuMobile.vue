@@ -11,7 +11,7 @@ onMounted(() => {
   <button
     @click="menuVisible = !menuVisible"
     type="button"
-    class="fixed top-0 right-0 mr-4 z-10 mt-2 capitalize focus:(outline-none ring-1 ring-gray-800) dark:focus:(ring-white) cursor-pointer rounded bg-transparent p-1 flex items-center gap-1 sm:hidden"
+    class="text-defaults fixed top-0 right-0 mr-4 z-10 mt-2 capitalize focus:(outline-none ring-1 ring-gray-800) dark:focus:(ring-white) cursor-pointer rounded bg-transparent p-1 flex items-center gap-1 sm:hidden"
     title="toggle menu"
   >
     {{ menuVisible ? "close" : "menu" }}
@@ -24,7 +24,7 @@ onMounted(() => {
   <div
     v-if="menuVisible"
     id="top-bar-mobile-menu"
-    class="fixed top-0 left-0 z-10 mt-[3rem] w-full backdrop-blur bg-white/30 dark:bg-gray-800/30 p-4"
+    class="text-defaults fixed top-0 left-0 z-10 mt-[3rem] w-full backdrop-blur bg-white/30 dark:bg-gray-800/30 p-4"
   >
     <NuxtLink
       v-for="item in appConfig.site.menus.topBarMenu"

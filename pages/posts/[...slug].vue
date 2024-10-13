@@ -1,5 +1,5 @@
 <script setup lang="ts">
-definePageMeta({ layout: "post" });
+definePageMeta({ layout: "post", layoutTransition: { name: "fade" } });
 const { loaded } = useFadeSlideLoadingState();
 </script>
 

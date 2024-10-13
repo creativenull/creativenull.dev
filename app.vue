@@ -16,6 +16,7 @@ defineOgImageComponent("Default");
 <template>
   <NuxtRouteAnnouncer />
   <NuxtLoadingIndicator :color="loadingColor" :throttle="0" />
+  <AppTopBar />
   <NuxtLayout>
     <NuxtPage />
   </NuxtLayout>

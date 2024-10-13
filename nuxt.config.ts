@@ -8,6 +8,11 @@ export default defineNuxtConfig({
     defaultLocale: "en",
   },
 
+  app: {
+    pageTransition: { name: "fade", mode: "out-in" },
+    layoutTransition: { name: "fade", mode: "out-in" },
+  },
+
   devtools: { enabled: true },
   modules: [
     "@nuxt/content",
