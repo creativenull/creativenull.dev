@@ -25,9 +25,10 @@ const socials = [
       <div v-for="social in socials" :key="social.title">
         <NuxtLink
           :to="social.url"
-          class="flex items-center gap-1 no-underline hover:(text-sky-600 underline) transition duration-200 focus:(outline-none ring-1 ring-gray-800) dark:focus:(ring-white)"
+          class="flex items-center gap-1 no-underline rounded hover:(text-sky-600 underline) transition duration-200 focus:(outline-none ring-1 ring-gray-800) dark:focus:(ring-white)"
           target="_blank"
           tabindex="0"
+          :title="`navigate to ${social.title}`"
         >
           <div :class="`${social.iconClass} inline-block`"></div>
           {{ social.title }}
