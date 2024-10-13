@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="rounded border border-gray-200 dark:border-gray-600 text-gray-500 dark:text-gray-400 max-w-[65ch] mx-auto p-4 my-10"
+    class="rounded-lg border border-gray-300 dark:border-gray-800 text-gray-500 max-w-[65ch] mx-auto p-4 my-10"
   >
     <div>
       <h5 class="italic">
@@ -9,7 +9,12 @@
       <p class="text-sm">Let me know what you think by messaging me on</p>
       <ul class="text-sm space-y-2">
         <li>
-          <NuxtLink to="https://x.com/creativenu11" external target="_blank">
+          <NuxtLink
+            to="https://x.com/creativenu11"
+            external
+            target="_blank"
+            tabindex="0"
+          >
             <div class="i-bi-twitter-x inline-block"></div>
             @creativenu11
           </NuxtLink>
@@ -19,6 +24,7 @@
             to="https://mastodon.online/@creativenull"
             external
             target="_blank"
+            tabindex="0"
           >
             <div class="i-bi-mastodon inline-block"></div>
             @creativenull@mastodon.online
