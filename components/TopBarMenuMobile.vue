@@ -29,7 +29,12 @@ onMounted(() => {
     <NuxtLink
       v-for="item in appConfig.site.menus.topBarMenu"
       :key="item.name"
-      :to="item.link"
+      @click="
+        () => {
+          menuVisible = false;
+          navigateTo(item.link);
+        }
+      "
       :title="`navigate to ${item.name}`"
       exact-active-class="underline text-sky-600"
       tabindex="0"
