@@ -29,7 +29,13 @@ export default defineConfig({
           "--at-apply": "font-jetbrains",
         },
         "ol code, ul code, p code": {
-          "--at-apply": "font-jetbrains px-2",
+          "--at-apply": "font-jetbrains",
+        },
+        "ol code::before, ul code::before, p code::before": {
+          content: "''",
+        },
+        "ol code::after, ul code::after, p code::after": {
+          content: "''",
         },
         a: {
           "--at-apply": "transition duration-200 hover:text-sky-600",
