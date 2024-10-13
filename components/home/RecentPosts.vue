@@ -9,8 +9,8 @@ const query = {
 
 <template>
   <div class="space-y-4">
-    <h2 class="text-xl sm:text-3xl">Recent posts</h2>
-    <div class="font-roboto space-y-4">
+    <h2 class="text-xl sm:text-2xl underline underline-offset-8">Recent posts</h2>
+    <div class="font-roboto text-gray-600 dark:text-gray-400 space-y-4">
       <ContentList :query v-slot="{ list }">
         <div v-for="post in list" :key="post._path" class="space-y-1">
           <div class="text-lg">

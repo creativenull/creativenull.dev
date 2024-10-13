@@ -20,8 +20,8 @@ const socials = [
 
 <template>
   <div class="space-y-4">
-    <h2 class="text-xl sm:text-3xl">Socials</h2>
-    <div class="flex items-center gap-4 font-roboto">
+    <h2 class="text-xl sm:text-2xl underline underline-offset-8">Socials</h2>
+    <div class="flex items-center gap-4 text-gray-600 dark:text-gray-400 font-roboto">
       <div v-for="social in socials" :key="social.title">
         <NuxtLink
           :to="social.url"
