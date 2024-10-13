@@ -14,7 +14,7 @@ withDefaults(defineProps<{ title?: string; description?: string }>(), {
         </h1>
       </div>
       <div class="self-end">
-        <img src="/logo_static.png" />
+        <img src="/logo_ogimage.png" />
       </div>
     </div>
   </div>

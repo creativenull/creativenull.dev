@@ -17,7 +17,7 @@ withDefaults(defineProps<{ title?: string; publishDate?: string }>(), {
         </p>
       </div>
       <div class="self-end">
-        <img src="/logo_static.png" />
+        <img src="/logo_ogimage.png" />
       </div>
     </div>
   </div>

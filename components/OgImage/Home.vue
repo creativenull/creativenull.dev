@@ -5,7 +5,7 @@ withDefaults(defineProps<{ description?: string }>(), { description: "" });
 <template>
   <div class="h-full w-full bg-gray-900 text-white p-10">
     <div class="flex flex-col gap-8">
-      <img src="/logo_static.png" />
+      <img src="/logo_ogimage.png" />
       <p class="text-[4rem]">
         {{ description }}
       </p>
