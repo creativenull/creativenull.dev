@@ -63,6 +63,7 @@ function clearTimer() {
     <button
       @click="() => (running ? stopTimer() : startTimer())"
       type="button"
+      title="start or stop the timer"
       class="capitalize border border-gray-700 bg-white dark:bg-gray-800 active:(bg-gray-100 translate-y-[2px]) dark:active:bg-gray-700 transition-transform duration-100 rounded focus:(outline-none ring-1 ring-gray-800) dark:focus:(ring-white) px-2 mt-2"
     >
       {{ running ? "stop" : "start" }}
