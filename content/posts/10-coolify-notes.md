@@ -1,4 +1,9 @@
 ---
+path: /posts/10-coolify-notes
+ogImage:
+  component: Post
+  props:
+    publishDate: "2024-08-24 13:31"
 title: Coolify Notes
 description: Notes on setting up my Coolify instance on my server.
 publishDate: "2024-08-24 13:31"

@@ -1,4 +1,9 @@
 ---
+path: /posts/9-plans-for-2024
+ogImage:
+  component: Post
+  props:
+    publishDate: "2024-01-01 08:00"
 title: Plans for 2024
 description:
   A quick overview on what I would like to do for the next year. Which involves open-source, job opportunities

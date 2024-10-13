@@ -1,4 +1,9 @@
 ---
+path: /posts/6-riotjs-review
+ogImage:
+  component: Post
+  props:
+    publishDate: "2020-10-01 08:00"
 title: Riot.js Review Part 1
 description: I haven't had much time to check out other frameworks, but finally got the time for this one
 publishDate: "2020-10-01 08:00"

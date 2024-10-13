@@ -1,7 +1,21 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  site: {
+    url: "http://localhost:3000",
+    name: "CreativeNull",
+    description:
+      "Welcome to my website! Check out my blogs, projects or just chill on my dashboard I use for work.",
+    defaultLocale: "en",
+  },
+
   devtools: { enabled: true },
-  modules: ["@nuxt/content", "@unocss/nuxt", "@vueuse/nuxt", "@nuxt/image"],
+  modules: [
+    "@nuxt/content",
+    "@nuxtjs/seo",
+    "@unocss/nuxt",
+    "@vueuse/nuxt",
+    "@nuxt/image",
+  ],
 
   routeRules: {
     "/": { prerender: true },
@@ -35,5 +49,9 @@ export default defineNuxtConfig({
         dark: "github-dark-default",
       },
     },
+  },
+
+  ogImage: {
+    fonts: ["Roboto"],
   },
 });

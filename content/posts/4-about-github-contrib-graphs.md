@@ -1,4 +1,9 @@
 ---
+path: /posts/4-about-github-contrib-graphs
+ogImage:
+  component: Post
+  props:
+    publishDate: "2020-06-12 08:00"
 title: About github contributions graph
 description: Lately, I've been working a lot of contributions on Github
 publishDate: "2020-06-12 08:00"

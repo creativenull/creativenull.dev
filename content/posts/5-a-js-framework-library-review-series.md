@@ -1,4 +1,9 @@
 ---
+path: /posts/5-a-js-framework-library-review-series
+ogImage:
+  component: Post
+  props:
+    publishDate: "2020-06-23 08:00"
 title: A JS framework/library review series
 description: Thinking about doing a review series on big and small JS frameworks/libraries
 publishDate: "2020-06-23 08:00"

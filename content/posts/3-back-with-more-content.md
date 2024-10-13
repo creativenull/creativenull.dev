@@ -1,4 +1,9 @@
 ---
+path: /posts/3-back-with-more-content
+ogImage:
+  component: Post
+  props:
+    publishDate: "2020-03-12 08:00"
 title: Back with more content
 description: I have been away for a while now, but I will be posting more content here soon
 publishDate: "2020-03-12 08:00"

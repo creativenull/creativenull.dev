@@ -1,4 +1,9 @@
 ---
+path: /posts/1-setting-up-vim-for-embedded-development-p1
+ogImage:
+  component: Post
+  props:
+    publishDate: "2019-02-08 08:00"
 title: Embedded development environment in Vim (2019) - Part 1
 description: There has been a lot of tutorials on setting up vim for a Python/JavaScript/Java/C/C++ environment
 publishDate: "2019-02-08 08:00"

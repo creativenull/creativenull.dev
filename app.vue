@@ -9,6 +9,8 @@ useHead({
       : appConfig.site.title;
   },
 });
+
+defineOgImageComponent("Default");
 </script>
 
 <template>

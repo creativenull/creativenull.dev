@@ -1,4 +1,9 @@
 ---
+path: /posts/2-setting-up-vim-for-embedded-development-p2
+ogImage:
+  component: Post
+  props:
+    publishDate: "2019-03-05 08:00"
 title: Embedded development environment in Vim (2019) - Part 2
 description: Last time, I showed you the plugins I used and setup their settings in a
 publishDate: "2019-03-05 08:00"
