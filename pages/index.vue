@@ -24,6 +24,9 @@ const { loaded } = useFadeSlideLoadingState();
         <Transition name="fade-slide-delay">
           <HomeRecentPosts v-if="loaded" />
         </Transition>
+        <Transition name="fade-slide-delay">
+          <HomeSocials v-if="loaded" />
+        </Transition>
       </div>
     </main>
 
