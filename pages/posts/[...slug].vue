@@ -15,7 +15,10 @@ const { loaded } = useFadeSlideLoadingState();
         </Transition>
 
         <Transition name="fade-slide-delay">
-          <ContentRenderer v-if="loaded" :value="doc" />
+          <div v-if="loaded">
+            <ContentRenderer :value="doc" />
+            <AppPostFooter />
+          </div>
         </Transition>
       </article>
     </ContentDoc>
