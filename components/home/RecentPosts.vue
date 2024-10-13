@@ -1,12 +1,4 @@
 <script setup lang="ts">
-const appConfig = useAppConfig();
-
-function truncated(description: string) {
-  return description.length > 80
-    ? description.slice(0, 80) + "..."
-    : description + "...";
-}
-
 const query = {
   path: "/posts",
   where: [{ draft: false }],
@@ -35,7 +27,7 @@ const query = {
             <span>{{ getLocaleDate(post.publishDate) }}</span>
           </div>
           <p class="text-sm">
-            {{ truncated(post.description) }}
+            {{ getTruncatedDescription(post.description) }}
           </p>
         </div>
       </ContentList>
