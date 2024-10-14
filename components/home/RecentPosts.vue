@@ -9,11 +9,14 @@ const query = {
 
 <template>
   <div class="space-y-4">
-    <h2 class="text-xl sm:text-2xl underline underline-offset-8">Recent posts</h2>
+    <h2 class="text-xl sm:text-2xl underline underline-offset-8">
+      Recent posts
+    </h2>
     <div class="font-roboto text-gray-600 dark:text-gray-400 space-y-4">
       <ContentList :query v-slot="{ list }">
         <div v-for="post in list" :key="post._path" class="space-y-1">
           <div class="text-lg">
+            <span>{{ getLocaleDate(post.publishDate) }}</span> /
             <h2 class="inline-block">
               <NuxtLink
                 :to="post._path"
@@ -23,10 +26,8 @@ const query = {
                 {{ post.title }}
               </NuxtLink>
             </h2>
-            -
-            <span>{{ getLocaleDate(post.publishDate) }}</span>
           </div>
-          <p class="text-sm">
+          <p class="text-sm text-gray-600 dark:text-gray-400">
             {{ getTruncatedDescription(post.description) }}
           </p>
         </div>
