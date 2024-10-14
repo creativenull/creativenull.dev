@@ -58,5 +58,6 @@ export default defineNuxtConfig({
 
   ogImage: {
     fonts: ["Roboto"],
+    componentDirs: ['ogimages']
   },
 });
