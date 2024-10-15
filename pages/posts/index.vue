@@ -11,14 +11,14 @@ const query = {
 <template>
   <div class="space-y-4">
     <h2 class="text-xl sm:text-3xl">Posts</h2>
-    <div class="font-roboto space-y-4">
+    <div class="text-pretty space-y-4">
       <ContentList :query v-slot="{ list }">
         <div v-for="post in list" :key="post._path" class="space-y-2">
           <div class="text-lg">
             <span class="text-gray-600 dark:text-gray-400">
               {{ getLocaleDate(post.publishDate) }}&nbsp;/&nbsp;
             </span>
-            <h2 class="inline-block">
+            <h3 class="inline">
               <NuxtLink
                 :to="post._path"
                 class="underline rounded hover:(text-sky-600 underline) transition duration-200 focus:(outline-none ring-1 ring-gray-800) dark:focus:(ring-white)"
@@ -26,7 +26,7 @@ const query = {
               >
                 {{ post.title }}
               </NuxtLink>
-            </h2>
+            </h3>
           </div>
           <p class="text-sm text-gray-600 dark:text-gray-400">
             {{ getTruncatedDescription(post.description) }}
