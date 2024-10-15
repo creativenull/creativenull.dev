@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="rounded-lg border border-gray-300 dark:border-gray-800 text-gray-500 max-w-[65ch] mx-auto p-4 my-10"
+    class="rounded-lg border border-gray-300 dark:border-gray-800 dark:text-gray-400 text-gray-600 max-w-[65ch] mx-auto p-4 my-10"
   >
     <div>
       <h5 class="italic">
