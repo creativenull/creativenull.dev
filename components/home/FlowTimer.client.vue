@@ -1,16 +1,33 @@
 <script setup lang="ts">
 const appConfig = useAppConfig();
-const notifyStart = useWebNotification({
-  title: `${appConfig.site.title} / Flow Timer`,
-  body: "The timer has started",
-  tag: "timer-started",
-});
 
-const notifyEnd = useWebNotification({
-  title: `${appConfig.site.title} / Flow Timer`,
-  body: "The timer has ended",
-  tag: "timer-ended",
-});
+const notificationPermissionGranted = ref(false);
+
+const startNotification = ref<Notification | null>(null);
+function notifyStart() {
+  if (!notificationPermissionGranted.value) return;
+
+  startNotification.value = new Notification(
+    `${appConfig.site.title} / Flow Timer`,
+    {
+      body: "The timer has started",
+      tag: "timer-started",
+    },
+  );
+}
+
+const endNotification = ref<Notification | null>(null);
+function notifyEnd() {
+  if (!notificationPermissionGranted.value) return;
+
+  endNotification.value = new Notification(
+    `${appConfig.site.title} / Flow Timer`,
+    {
+      body: "The timer has ended",
+      tag: "timer-ended",
+    },
+  );
+}
 
 const minutes = useState("flowTimeMinutes", () => "00");
 const seconds = useState("flowTimerSeconds", () => "00");
@@ -30,8 +47,7 @@ function startTimer() {
   if (!running.value) {
     running.value = true;
     timeInterval.value = window.setInterval(updateTimer, 1000);
-
-    notifyStart.isSupported && notifyStart.show();
+    notifyStart();
   }
 }
 
@@ -40,8 +56,7 @@ function stopTimer() {
     running.value = false;
     window.clearInterval(timeInterval.value!);
     clearTimer();
-
-    notifyEnd.isSupported && notifyEnd.show();
+    notifyEnd();
   }
 }
 
@@ -49,6 +64,16 @@ function clearTimer() {
   minutes.value = "00";
   seconds.value = "00";
 }
+
+onMounted(() => {
+  if ("Notification" in window) {
+    window.Notification.requestPermission().then((permission) =>
+      permission === "granted"
+        ? (notificationPermissionGranted.value = true)
+        : (notificationPermissionGranted.value = false),
+    );
+  }
+});
 </script>
 
 <template>
