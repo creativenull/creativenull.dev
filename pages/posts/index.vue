@@ -13,7 +13,7 @@ const query = {
     <h2 class="text-xl sm:text-3xl">Posts</h2>
     <div class="font-roboto space-y-4">
       <ContentList :query v-slot="{ list }">
-        <div v-for="post in list" :key="post._path" class="space-y-1">
+        <div v-for="post in list" :key="post._path" class="space-y-2">
           <div class="text-lg">
             <span class="text-gray-600 dark:text-gray-400">
               {{ getLocaleDate(post.publishDate) }}&nbsp;/&nbsp;
