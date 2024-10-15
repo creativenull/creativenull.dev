@@ -1,4 +1,6 @@
 <script setup lang="ts">
+useHead({ title: "Posts" });
+
 const query = {
   path: "/posts",
   where: [{ draft: false }],
