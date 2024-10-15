@@ -1,7 +1,7 @@
 <template>
   <div class="space-y-4">
     <h2 class="text-xl sm:text-3xl">My open-source projects</h2>
-    <div class="font-roboto space-y-4">
+    <div class="space-y-4">
       <ContentList path="/projects" v-slot="{ list }">
         <div v-for="project in list" :key="project.url" class="space-y-1">
           <div class="text-lg">
