@@ -14,8 +14,10 @@ const { loaded } = useFadeSlideLoadingState();
       <div class="space-y-4">
         <HomeCurrentTime />
         <HomeWeatherReport />
-        <HomeFlowTimer />
-        <HomeTasks />
+        <div class="sm:block hidden">
+          <HomeFlowTimer />
+          <HomeTasks />
+        </div>
       </div>
       <div class="space-y-4 mb-4">
         <Transition name="fade-slide">
