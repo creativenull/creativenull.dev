@@ -61,9 +61,15 @@ export default defineConfig({
     presetWebFonts({
       provider: "bunny",
       fonts: {
-        jetbrains: "JetBrains Mono",
-        righteous: "Righteous",
-        roboto: "Roboto",
+        jetbrains: [
+          { name: "JetBrains Mono" },
+          { name: "monospace", provider: "none" },
+        ],
+        righteous: [
+          { name: "Righteous" },
+          { name: "sans-serif", provider: "none" },
+        ],
+        roboto: [{ name: "Roboto" }, { name: "sans-serif", provider: "none" }],
       },
     }),
   ],
