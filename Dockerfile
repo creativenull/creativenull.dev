@@ -11,4 +11,6 @@ EXPOSE 3000
 ENV NUXT_HOST=0.0.0.0
 ENV NUXT_PORT=3000
 
+HEALTHCHECK CMD curl --fail http://localhost:${NUXT_PORT}/up || exit 1
+
 CMD ["npm", "start"]
