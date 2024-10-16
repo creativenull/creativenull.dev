@@ -1,5 +1,7 @@
 FROM node:22-alpine
 
+RUN apk update && apk add curl
+
 RUN mkdir -p /app
 WORKDIR /app
 
