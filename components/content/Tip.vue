@@ -1,5 +1,5 @@
 <template>
-  <div :class="`${variant} border-l border-l-10 py-2 px-2 md:my-8`">
+  <div :class="`${variant} border-l border-l-10 py-2 px-2 sm:my-8 my-4`">
     <h4 :class="`${textColor} capitalize m-0`">{{ props.tip }}</h4>
     <div class="text-xs md:text-base">
       <slot />
