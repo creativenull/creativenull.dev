@@ -1,10 +1,9 @@
 FROM node:22-alpine
 
 COPY --link package.json package-lock.json .
+COPY --link . .
 
 RUN npm ci && npm run build
-
-COPY --link . .
 
 EXPOSE 3000
 ENV NUXT_HOST=0.0.0.0
