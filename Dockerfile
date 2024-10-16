@@ -1,7 +1,9 @@
 FROM node:22-alpine
 
-COPY --link package.json package-lock.json .
-COPY --link . .
+RUN mkdir -p /app
+WORKDIR /app
+
+COPY . /app
 
 RUN npm ci && npm run build
 
