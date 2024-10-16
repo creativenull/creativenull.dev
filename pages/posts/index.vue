@@ -9,7 +9,7 @@ const query = {
 </script>
 
 <template>
-  <div class="space-y-4">
+  <div class="space-y-4 mb-4">
     <h2 class="text-xl sm:text-3xl">Posts</h2>
     <div class="text-pretty space-y-4">
       <ContentList :query v-slot="{ list }">

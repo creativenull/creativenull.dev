@@ -1,5 +1,5 @@
 <template>
-  <div class="space-y-4">
+  <div class="space-y-4 mb-4">
     <h2 class="text-xl sm:text-3xl">My open-source projects</h2>
     <div class="space-y-4">
       <ContentList path="/projects" v-slot="{ list }">
