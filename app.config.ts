@@ -6,9 +6,21 @@ export default defineAppConfig({
     author: "Arnold Chand",
 
     socials: [
-      { name: "twitter", iconClass: "i-bi-twitter-x", url: "https://twitter.com/creativenu11" },
-      { name: "mastodon", iconClass: "i-bi-mastodon", url: "https://mastodon.online/@creativenull" },
-      { name: "github", iconClass: "i-bi-github", url: "https://github.com/creativenull" },
+      {
+        name: "twitter",
+        iconClass: "i-bi-twitter-x",
+        url: "https://twitter.com/creativenu11",
+      },
+      {
+        name: "mastodon",
+        iconClass: "i-bi-mastodon",
+        url: "https://mastodon.online/@creativenull",
+      },
+      {
+        name: "github",
+        iconClass: "i-bi-github",
+        url: "https://github.com/creativenull",
+      },
     ],
 
     menus: {

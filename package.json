@@ -2,6 +2,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "fmt": "prettier --write app.vue app.config.ts nuxt.config.ts uno.config.ts components composables content layouts pages server utils",
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",

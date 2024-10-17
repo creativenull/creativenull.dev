@@ -169,7 +169,9 @@ import store from "./store";
 
 registerMobxPlugin(store);
 
-document.addEventListener("DOMContentLoaded", () => component(App)(document.getElementById("app")));
+document.addEventListener("DOMContentLoaded", () =>
+  component(App)(document.getElementById("app")),
+);
 ```
 
 Here is how you'll retrive data from the store from a component:

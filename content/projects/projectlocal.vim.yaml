@@ -1,3 +1,3 @@
 title: projectlocal.vim
-url: 'https://github.com/creativenull/projectlocal.vim'
+url: "https://github.com/creativenull/projectlocal.vim"
 description: Safely load your project specific configurations written in json, lua or vimscript

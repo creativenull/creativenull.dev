@@ -18,9 +18,9 @@ there are some great options out there. In this post I will cover one alternativ
 along with a helper plugin I created to help ease its setup.
 
 ::tip
-  There are also other options out there like: [nvim-lint][9], [formatter.nvim][10],
-  [guard.nvim][11], [diagnostic-languageserver][12] and many more that I'm not aware of. However,
-  the focus here is only on efm-langserver.
+There are also other options out there like: [nvim-lint][9], [formatter.nvim][10],
+[guard.nvim][11], [diagnostic-languageserver][12] and many more that I'm not aware of. However,
+the focus here is only on efm-langserver.
 ::
 
 ## Table of Contents

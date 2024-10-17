@@ -11,9 +11,9 @@ draft: false
 ---
 
 ::tip
-  If you haven't read the first part, [click
-  here](/posts/1-setting-up-vim-for-embedded-development-p1) to read that first before you read part
-  two.
+If you haven't read the first part, [click
+here](/posts/1-setting-up-vim-for-embedded-development-p1) to read that first before you read part
+two.
 ::
 
 Last time, I showed you the plugins I used and setup their settings in a .vimrc (for vim) or init.vim (for nvim) file. This second part will guide you through setting up `cmake` and making sure our Langauge Server/Client is able to work properly with our custom compiler.
