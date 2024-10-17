@@ -1,4 +1,4 @@
-const weatherApiUrl = "https://wttr.in/Port%20of%20Spain?format=3&m";
+const weatherApiUrl = "https://wttr.in/Port_of_Spain?format=3&m";
 const weatherStorageKey = "app:wttr_data";
 const weatherStorageExpiresKey = "app:wttr_data:expires_at";
 
