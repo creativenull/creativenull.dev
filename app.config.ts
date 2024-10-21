@@ -1,3 +1,5 @@
+// @unocss-include
+
 export default defineAppConfig({
   site: {
     title: "CreativeNull",
@@ -17,7 +19,7 @@ export default defineAppConfig({
         url: "https://mastodon.online/@creativenull",
       },
       {
-        name: "github",
+        name: "GitHub",
         iconClass: "i-bi-github",
         url: "https://github.com/creativenull",
       },
