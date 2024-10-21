@@ -30,6 +30,10 @@ const { loaded } = useFadeSlideLoadingState();
           <HomeSocials v-if="loaded" />
         </Transition>
       </div>
+
+      <div class="block sm:hidden mb-8">
+        <AppFooter />
+      </div>
     </main>
 
     <HomeFooter />
