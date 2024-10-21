@@ -19,7 +19,7 @@ const { loaded } = useFadeSlideLoadingState();
           <HomeTasks />
         </div>
       </div>
-      <div class="space-y-4 mb-4">
+      <div class="space-y-4 my-8">
         <Transition name="fade-slide">
           <HomeAboutMe v-if="loaded" />
         </Transition>
