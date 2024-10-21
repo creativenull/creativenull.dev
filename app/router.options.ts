@@ -11,7 +11,7 @@ export default {
             behavior: "smooth",
           });
         }
-      }, 500);
+      }, 150);
     });
   },
 } satisfies RouterConfig;
