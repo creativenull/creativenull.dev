@@ -21,6 +21,8 @@
           </p>
         </div>
       </ContentList>
+
+      <AppFooter />
     </div>
   </div>
 </template>

@@ -1,7 +1,9 @@
 <script setup lang="ts">
+import type { QueryBuilderParams } from "@nuxt/content";
+
 useHead({ title: "Posts" });
 
-const query = {
+const query: QueryBuilderParams = {
   path: "/posts",
   where: [{ draft: false }],
   sort: [{ publishDate: -1 }],
@@ -33,6 +35,8 @@ const query = {
           </p>
         </div>
       </ContentList>
+
+      <AppFooter />
     </div>
   </div>
 </template>
