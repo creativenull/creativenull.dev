@@ -9,19 +9,19 @@ export default defineAppConfig({
 
     socials: [
       {
-        name: "twitter",
-        iconClass: "i-bi-twitter-x",
+        name: "Twitter",
+        iconClass: "i-logos-x",
         url: "https://twitter.com/creativenu11",
       },
       {
-        name: "mastodon",
-        iconClass: "i-bi-mastodon",
+        name: "Mastodon",
+        iconClass: "i-logos-mastodon-icon",
         url: "https://mastodon.online/@creativenull",
       },
       {
-        name: "GitHub",
-        iconClass: "i-bi-github",
-        url: "https://github.com/creativenull",
+        name: "Bluesky",
+        iconClass: "i-logos-bluesky",
+        url: "https://bsky.app/profile/creativenull.bsky.social",
       },
     ],
 
