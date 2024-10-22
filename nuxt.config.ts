@@ -11,6 +11,15 @@ export default defineNuxtConfig({
   app: {
     pageTransition: { name: "fade", mode: "out-in" },
     layoutTransition: { name: "fade", mode: "out-in" },
+
+    head: {
+      script: [
+        {
+          src: "https://umami.creativenull.xyz/script.js",
+          "data-website-id": "69f44c4e-c105-4516-bfc9-72480710fad1",
+        },
+      ],
+    },
   },
 
   devtools: { enabled: true },
