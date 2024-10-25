@@ -15,7 +15,8 @@
     "@nuxtjs/seo": "^2.0.0-rc.23",
     "@vueuse/core": "^11.1.0",
     "@vueuse/nuxt": "^11.1.0",
-    "nuxt": "^3.13.0"
+    "nuxt": "^3.13.0",
+    "nuxt-security": "^2.0.0"
   },
   "devDependencies": {
     "@iconify-json/bi": "^1.2.0",
