@@ -10,17 +10,17 @@ export default defineAppConfig({
     socials: [
       {
         name: "Twitter",
-        iconClass: "i-logos-x",
+        iconClass: "light:i-logos-x dark:i-simple-icons-twitter",
         url: "https://twitter.com/creativenu11",
       },
       {
         name: "Mastodon",
-        iconClass: "i-logos-mastodon-icon",
+        iconClass: "light:i-logos-mastodon-icon dark:i-simple-icons-mastodon",
         url: "https://mastodon.online/@creativenull",
       },
       {
         name: "Bluesky",
-        iconClass: "i-logos-bluesky",
+        iconClass: "light:i-logos-bluesky dark:i-simple-icons-bluesky",
         url: "https://bsky.app/profile/creativenull.bsky.social",
       },
     ],
