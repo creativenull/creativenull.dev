@@ -9,6 +9,11 @@ export default defineAppConfig({
 
     socials: [
       {
+        name: "GitHub",
+        iconClass: "light:i-logos-github-icon dark:i-simple-icons-github",
+        url: "https://github.com/creativenull",
+      },
+      {
         name: "Twitter",
         iconClass: "light:i-logos-x dark:i-simple-icons-twitter",
         url: "https://twitter.com/creativenu11",

@@ -1,14 +1,15 @@
 <script setup lang="ts">
 const appConfig = useAppConfig();
+const socials = appConfig.site.socials.filter((s) => s.name !== "GitHub");
 </script>
 
 <template>
   <footer class="border-t border-gray-800 dark:border-gray-200 pt-4 my-10">
-    <div>
+    <div class="space-y-1">
       <p class="italic">Enjoyed the post or have some constructive thoughts?</p>
-      <p class="text-sm">Let me know what you think by messaging me on</p>
+      <p class="text-sm">Reach out to me:</p>
       <nav class="text-sm space-y-2">
-        <div v-for="social in appConfig.site.socials" :key="social.name">
+        <div v-for="social in socials" :key="social.name">
           <NuxtLink
             :to="social.url"
             class="capitalize flex items-center gap-1 underline rounded hover:text-sky-600 transition duration-200 focus:(outline-none ring-1 ring-gray-800) dark:focus:(ring-white)"
@@ -27,8 +28,8 @@ const appConfig = useAppConfig();
       <p class="italic">About me</p>
       <p class="text-sm">
         I am a software developer and open-source enthusiast. I live in the
-        island of Trinidad and Tobago as a freelance developer working mainly
-        with PHP (Laravel), TypeScript, and Vuejs.
+        island of Trinidad and Tobago as a freelance developer mainly building
+        applications with Laravel and Vuejs.
       </p>
     </div>
 
