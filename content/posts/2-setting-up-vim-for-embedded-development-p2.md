@@ -6,6 +6,7 @@ ogImage:
     publishDate: "2019-03-05 08:00"
 title: Embedded development environment in Vim (2019) - Part 2
 description: Last time, I showed you the plugins I used and setup their settings in a
+tags: tutorial, embedded, vim, cmake, gcc, arm, tm4c129exl, part2
 publishDate: "2019-03-05 08:00"
 draft: false
 ---

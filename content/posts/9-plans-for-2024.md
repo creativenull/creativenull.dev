@@ -8,6 +8,7 @@ title: Plans for 2024
 description:
   A quick overview on what I would like to do for the next year. Which involves open-source, job opportunities
   and travel.
+tags: personal, goals
 publishDate: "2024-01-01 08:00"
 draft: false
 ---

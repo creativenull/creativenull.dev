@@ -6,6 +6,7 @@ ogImage:
     publishDate: "2019-02-08 08:00"
 title: Embedded development environment in Vim (2019) - Part 1
 description: There has been a lot of tutorials on setting up vim for a Python/JavaScript/Java/C/C++ environment
+tags: tutorial, embedded, vim, cmake, gcc, arm, tm4c129exl, part1
 publishDate: "2019-02-08 08:00"
 draft: false
 ---

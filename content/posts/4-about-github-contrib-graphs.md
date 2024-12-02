@@ -6,6 +6,7 @@ ogImage:
     publishDate: "2020-06-12 08:00"
 title: About github contributions graph
 description: Lately, I've been working a lot of contributions on Github
+tags: general, github, contrib, graph
 publishDate: "2020-06-12 08:00"
 draft: false
 ---

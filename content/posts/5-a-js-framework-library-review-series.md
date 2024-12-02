@@ -6,6 +6,7 @@ ogImage:
     publishDate: "2020-06-23 08:00"
 title: A JS framework/library review series
 description: Thinking about doing a review series on big and small JS frameworks/libraries
+tags: general, js, framework, review
 publishDate: "2020-06-23 08:00"
 draft: false
 ---

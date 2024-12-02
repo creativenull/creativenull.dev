@@ -6,6 +6,7 @@ ogImage:
     publishDate: "2021-01-02 08:00"
 title: Installing Neovim nightly alongside stable
 description: In this post I will guide you on how to install neovim nightly (v0.5) alongside your stable version
+tags: neovim, nvim, installation, guide, git
 publishDate: "2021-01-02 08:00"
 draft: false
 ---

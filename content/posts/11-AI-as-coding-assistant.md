@@ -6,6 +6,7 @@ ogImage:
     publishDate: "2024-11-16 12:13"
 title: AI as Coding Assistant
 description: My take on AI and how it helps with my coding and what it lacks in different areas.
+tags: neovim, nvim, ai, codeium
 publishDate: "2024-11-16 12:13"
 draft: false
 ---

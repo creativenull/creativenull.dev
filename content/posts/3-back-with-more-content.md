@@ -6,6 +6,7 @@ ogImage:
     publishDate: "2020-03-12 08:00"
 title: Back with more content
 description: I have been away for a while now, but I will be posting more content here soon
+tags: general, misc
 publishDate: "2020-03-12 08:00"
 draft: false
 ---

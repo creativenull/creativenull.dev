@@ -6,6 +6,7 @@ ogImage:
     publishDate: "2024-08-24 13:31"
 title: Coolify Notes
 description: Notes on setting up my Coolify instance on my server.
+tags: self-host, coolify, linode, ubuntu
 publishDate: "2024-08-24 13:31"
 draft: false
 ---

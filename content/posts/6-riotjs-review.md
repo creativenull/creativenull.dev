@@ -6,6 +6,7 @@ ogImage:
     publishDate: "2020-10-01 08:00"
 title: Riot.js Review Part 1
 description: I haven't had much time to check out other frameworks, but finally got the time for this one
+tags: riojs, review, typescript, ts, js
 publishDate: "2020-10-01 08:00"
 draft: false
 ---

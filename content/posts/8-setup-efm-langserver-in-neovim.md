@@ -6,6 +6,7 @@ ogImage:
     publishDate: "2023-08-20 08:00"
 title: Setup efm-langserver in neovim
 description: A guide to setup efm-langserver, an alternative to null-ls, in neovim.
+tags: neovim, nvim, neovim-plugin, nvim-plugin, guide, lua
 publishDate: "2023-08-20 08:00"
 draft: false
 ---
