@@ -5,7 +5,7 @@ ogImage:
   props:
     publishDate: "2024-12-22 12:00"
 title: A review of 2024
-description: What it means to get older and how can I look toward a brighter future
+description: A review of what has happened with me this year and what to look for next year
 tags: personal
 publishDate: "2024-12-22 12:00"
 draft: false
