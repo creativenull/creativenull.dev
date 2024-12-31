@@ -6,9 +6,7 @@ const socials = appConfig.site.socials.filter((s) => s.name !== "GitHub");
 <template>
   <footer class="border-t border-gray-800 dark:border-gray-200 pt-4 my-10">
     <div class="space-y-1">
-      <p class="italic">Enjoyed the post or have some constructive thoughts?</p>
-      <p class="text-sm">Reach out to me:</p>
-      <nav class="text-sm space-y-2">
+      <nav class="text-lg flex gap-4">
         <div v-for="social in socials" :key="social.name">
           <NuxtLink
             :to="social.url"
@@ -17,19 +15,18 @@ const socials = appConfig.site.socials.filter((s) => s.name !== "GitHub");
             tabindex="0"
             :title="`navigate to ${social.name}`"
           >
-            <div :class="`${social.iconClass} inline-block`"></div>
-            {{ social.name }}
+            <div :class="`${social.iconClass}`"></div>
           </NuxtLink>
         </div>
       </nav>
     </div>
 
-    <div>
-      <p class="italic">About me</p>
-      <p class="text-sm">
-        I am a software developer and open-source enthusiast. I live in the
-        island of Trinidad and Tobago as a freelance developer mainly building
-        applications with Laravel and Vuejs.
+    <div class="my-4">
+      <h6 class="text-sm font-jetbrains">whoami</h6>
+      <p class="text-sm my-1">
+        A freelance software developer from Trinidad and Tobago 🇹🇹 who is
+        passionate about software development and open-source work and maybe a
+        <em>tad bit</em> obsessed with tweaking my vim configuration.
       </p>
     </div>
 
