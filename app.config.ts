@@ -35,7 +35,6 @@ export default defineAppConfig({
         { name: "home", link: "/" },
         { name: "posts", link: "/posts" },
         { name: "projects", link: "/projects" },
-        { name: "portfolio", link: "/portfolio" },
       ],
     },
 
