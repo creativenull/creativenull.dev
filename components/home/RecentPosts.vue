@@ -1,5 +1,6 @@
 <script setup lang="ts">
-const query = {
+import type { QueryBuilderParams } from "@nuxt/content";
+const query: QueryBuilderParams = {
   path: "/posts",
   where: [{ draft: false }],
   limit: 3,
@@ -9,9 +10,7 @@ const query = {
 
 <template>
   <div class="space-y-4">
-    <h2
-      class="text-xl sm:text-2xl text-gray-600 dark:text-gray-400 underline underline-offset-8"
-    >
+    <h2 class="text-xl text-sky-700 underline underline-offset-8">
       Recent posts
     </h2>
     <div class="font-roboto space-y-4">
