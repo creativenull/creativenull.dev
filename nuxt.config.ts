@@ -70,4 +70,20 @@ export default defineNuxtConfig({
     fonts: ["Roboto"],
     componentDirs: ["ogimages"],
   },
+
+  security: {
+    headers: {
+      contentSecurityPolicy: {
+        // Allow umami analytics url to be loaded from any origin
+        "script-src": [
+          "'self'",
+          "https:",
+          "'unsafe-inline'",
+          "'strict-dynamic'",
+          "'nonce-{{nonce}}'",
+          "https://umami.creativenull.xyz/script.js",
+        ],
+      },
+    },
+  },
 });
