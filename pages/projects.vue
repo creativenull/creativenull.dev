@@ -1,3 +1,7 @@
+<script setup lang="ts">
+useHead({ title: "Projects" });
+</script>
+
 <template>
   <div class="space-y-4 mb-4">
     <h2 class="text-xl sm:text-3xl">My open-source projects</h2>
