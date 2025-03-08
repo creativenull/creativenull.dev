@@ -1,6 +1,8 @@
 <script setup lang="ts">
 definePageMeta({ layout: "post", layoutTransition: { name: "fade" } });
 const { loaded } = useFadeSlideLoadingState();
+
+defineOgImageComponent("Post");
 </script>
 
 <template>

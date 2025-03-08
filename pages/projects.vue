@@ -1,5 +1,6 @@
 <script setup lang="ts">
 useHead({ title: "Projects" });
+defineOgImageComponent("Default");
 </script>
 
 <template>

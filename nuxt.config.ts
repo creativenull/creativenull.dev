@@ -23,13 +23,14 @@ export default defineNuxtConfig({
 
   devtools: { enabled: true },
   modules: [
-    "@nuxt/content",
     "@nuxtjs/seo",
     "@unocss/nuxt",
     "@vueuse/nuxt",
     "@nuxt/image",
     "nuxt-security",
     "@nuxt/fonts",
+    "nuxt-og-image",
+    "@nuxt/content",
   ],
 
   routeRules: {
