@@ -30,6 +30,7 @@ export default defineNuxtConfig({
     "@vueuse/nuxt",
     "@nuxt/image",
     "nuxt-security",
+    "@nuxt/fonts",
   ],
 
   routeRules: {
@@ -86,4 +87,13 @@ export default defineNuxtConfig({
       },
     },
   },
+
+  fonts: {
+    families: [
+      { name: "JetBrains Mono", provider: "bunny" },
+      { name: "Roboto", provider: "bunny" },
+      { name: "Righteous", provider: "bunny" },
+    ],
+  },
 });
+

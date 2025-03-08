@@ -5,7 +5,7 @@ const appConfig = useAppConfig();
 <template>
   <div class="space-y-4">
     <h2
-      class="text-xl underline text-sky-700 underline-offset-8"
+      class="text-xl underline text-sky-700 underline-offset-8 font-departure"
     >
       Socials
     </h2>

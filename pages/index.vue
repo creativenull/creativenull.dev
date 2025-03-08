@@ -9,9 +9,9 @@ const { loaded } = useFadeSlideLoadingState();
 <template>
   <div>
     <main
-      class="text-defaults px-2 sm:px-0 pt-[4rem] font-departure min-h-[100vh] container mx-auto grid grid-cols-1 sm:grid-cols-2 gap-2"
+      class="text-defaults px-2 sm:px-0 pt-[4rem] min-h-[100vh] container mx-auto grid grid-cols-1 sm:grid-cols-2 gap-2"
     >
-      <div class="space-y-4">
+      <div class="font-departure space-y-4">
         <HomeCurrentTime />
         <HomeWeatherReport />
         <div class="sm:block hidden">

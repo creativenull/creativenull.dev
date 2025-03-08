@@ -1,7 +1,7 @@
 <template>
   <div class="space-y-4">
     <h2
-      class="text-xl text-sky-700 underline underline-offset-8"
+      class="text-xl text-sky-700 underline underline-offset-8 font-departure"
     >
       About me
     </h2>

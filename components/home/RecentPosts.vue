@@ -10,7 +10,7 @@ const query: QueryBuilderParams = {
 
 <template>
   <div class="space-y-4">
-    <h2 class="text-xl text-sky-700 underline underline-offset-8">
+    <h2 class="text-xl text-sky-700 underline underline-offset-8 font-departure">
       Recent posts
     </h2>
     <div class="font-roboto space-y-4">

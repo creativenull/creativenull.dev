@@ -2,13 +2,20 @@ import {
   defineConfig,
   presetTypography,
   presetWind,
-  presetWebFonts,
   presetIcons,
   transformerVariantGroup,
   transformerDirectives,
 } from "unocss";
 
 export default defineConfig({
+  theme: {
+    fontFamily: {
+      jetbrains: "'JetBrains Mono', monospace",
+      departure: "'Departure Mono', monospace",
+      righteous: "'Righteous', cursive",
+      roboto: "'Roboto', sans-serif",
+    },
+  },
   rules: [["font-departure", { "font-family": "'Departure Mono', monospace" }]],
   shortcuts: {
     "text-defaults": "text-gray-700 dark:text-white",
@@ -56,20 +63,6 @@ export default defineConfig({
         "ul, ol": {
           "--at-apply": "ml-2",
         },
-      },
-    }),
-    presetWebFonts({
-      provider: "bunny",
-      fonts: {
-        jetbrains: [
-          { name: "JetBrains Mono" },
-          { name: "monospace", provider: "none" },
-        ],
-        righteous: [
-          { name: "Righteous" },
-          { name: "sans-serif", provider: "none" },
-        ],
-        roboto: [{ name: "Roboto" }, { name: "sans-serif", provider: "none" }],
       },
     }),
   ],
