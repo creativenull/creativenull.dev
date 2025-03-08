@@ -3,8 +3,7 @@ export default defineNuxtConfig({
   site: {
     url: "http://localhost:3000",
     name: "CreativeNull",
-    description:
-      "Welcome to my website! Check out my blogs, projects or just chill on my dashboard I use for work.",
+    description: "Welcome to my website! Check out my blogs, projects or just chill on my dashboard I use for work.",
     defaultLocale: "en",
   },
 
@@ -48,18 +47,7 @@ export default defineNuxtConfig({
 
   content: {
     highlight: {
-      langs: [
-        "json",
-        "js",
-        "ts",
-        "html",
-        "css",
-        "vue",
-        "shell",
-        "lua",
-        "php",
-        "vimscript",
-      ],
+      langs: ["json", "js", "ts", "html", "css", "vue", "shell", "lua", "php", "vimscript"],
       theme: {
         default: "github-light-default",
         dark: "github-dark-default",
@@ -96,4 +84,3 @@ export default defineNuxtConfig({
     ],
   },
 });
-

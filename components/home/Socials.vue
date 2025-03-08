@@ -4,11 +4,7 @@ const appConfig = useAppConfig();
 
 <template>
   <div class="space-y-4">
-    <h2
-      class="text-xl underline text-sky-700 underline-offset-8 font-departure"
-    >
-      Socials
-    </h2>
+    <h2 class="text-xl underline text-sky-700 underline-offset-8 font-departure">Socials</h2>
     <div class="flex items-center gap-4 font-roboto">
       <div v-for="social in appConfig.site.socials" :key="social.name">
         <NuxtLink

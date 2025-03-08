@@ -12,9 +12,7 @@ const { loaded } = useFadeSlideLoadingState();
             <h1 class="text-2xl sm:text-4xl mb-0">{{ doc.title }}</h1>
             <span class="text-xs">{{ getLocaleDate(doc.publishDate) }}</span>
             <div class="inline-block text-xs ml-1">
-              <span v-for="tag in getTagsFromString(doc.tags)" :key="tag">
-                #{{ tag }}
-              </span>
+              <span v-for="tag in getTagsFromString(doc.tags)" :key="tag"> #{{ tag }} </span>
             </div>
           </div>
         </Transition>

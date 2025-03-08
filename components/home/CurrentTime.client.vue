@@ -17,9 +17,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <h2 class="text-3xl sm:text-6xl">
-    {{ hours }}<span class="blink-animation">:</span>{{ minutes }}
-  </h2>
+  <h2 class="text-3xl sm:text-6xl">{{ hours }}<span class="blink-animation">:</span>{{ minutes }}</h2>
 </template>
 
 <style scoped>

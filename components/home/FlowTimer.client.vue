@@ -7,26 +7,20 @@ const startNotification = ref<Notification | null>(null);
 function notifyStart() {
   if (!notificationPermissionGranted.value) return;
 
-  startNotification.value = new Notification(
-    `${appConfig.site.title} / Flow Timer`,
-    {
-      body: "The timer has started",
-      tag: "timer-started",
-    },
-  );
+  startNotification.value = new Notification(`${appConfig.site.title} / Flow Timer`, {
+    body: "The timer has started",
+    tag: "timer-started",
+  });
 }
 
 const endNotification = ref<Notification | null>(null);
 function notifyEnd() {
   if (!notificationPermissionGranted.value) return;
 
-  endNotification.value = new Notification(
-    `${appConfig.site.title} / Flow Timer`,
-    {
-      body: "The timer has ended",
-      tag: "timer-ended",
-    },
-  );
+  endNotification.value = new Notification(`${appConfig.site.title} / Flow Timer`, {
+    body: "The timer has ended",
+    tag: "timer-ended",
+  });
 }
 
 const minutes = useState("flowTimeMinutes", () => "00");
@@ -79,10 +73,7 @@ onMounted(() => {
 <template>
   <div class="py-4">
     <h2 class="text-xl">Flow Timer</h2>
-    <div
-      class="text-base sm:text-4xl transition-color duration-300"
-      :class="{ 'text-green-500': running }"
-    >
+    <div class="text-base sm:text-4xl transition-color duration-300" :class="{ 'text-green-500': running }">
       <span v-text="minutes"></span>&colon;<span v-text="seconds"></span>
     </div>
     <button

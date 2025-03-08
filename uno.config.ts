@@ -30,8 +30,7 @@ export default defineConfig({
           "--at-apply": "font-bold",
         },
         pre: {
-          "--at-apply":
-            "border border-dashed border-gray-400 dark:border-gray-500",
+          "--at-apply": "border border-dashed border-gray-400 dark:border-gray-500",
         },
         "pre code": {
           "--at-apply": "font-jetbrains",

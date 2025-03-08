@@ -4,9 +4,7 @@ const appConfig = useAppConfig();
 
 useHead({
   titleTemplate: (titleChunk) => {
-    return titleChunk
-      ? `${titleChunk} / ${appConfig.site.title}`
-      : appConfig.site.title;
+    return titleChunk ? `${titleChunk} / ${appConfig.site.title}` : appConfig.site.title;
   },
 });
 

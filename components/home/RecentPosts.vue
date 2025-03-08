@@ -10,16 +10,12 @@ const query: QueryBuilderParams = {
 
 <template>
   <div class="space-y-4">
-    <h2 class="text-xl text-sky-700 underline underline-offset-8 font-departure">
-      Recent posts
-    </h2>
+    <h2 class="text-xl text-sky-700 underline underline-offset-8 font-departure">Recent posts</h2>
     <div class="font-roboto space-y-4">
       <ContentList :query v-slot="{ list }">
         <div v-for="post in list" :key="post._path" class="space-y-1">
           <div class="text-lg">
-            <span class="text-gray-600 dark:text-gray-400">
-              {{ getLocaleDate(post.publishDate) }}&nbsp;
-            </span>
+            <span class="text-gray-600 dark:text-gray-400"> {{ getLocaleDate(post.publishDate) }}&nbsp; </span>
 
             <h2 class="inline-block">
               <NuxtLink

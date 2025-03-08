@@ -17,9 +17,7 @@ const query: QueryBuilderParams = {
       <ContentList :query v-slot="{ list }">
         <div v-for="post in list" :key="post._path" class="space-y-2">
           <div class="text-lg">
-            <span class="text-gray-600 dark:text-gray-400">
-              {{ getLocaleDate(post.publishDate) }}&nbsp;
-            </span>
+            <span class="text-gray-600 dark:text-gray-400"> {{ getLocaleDate(post.publishDate) }}&nbsp; </span>
             <h3 class="inline">
               <NuxtLink
                 :to="post._path"

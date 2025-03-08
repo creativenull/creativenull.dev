@@ -15,10 +15,7 @@ onMounted(() => {
     title="toggle menu"
   >
     {{ menuVisible ? "close" : "menu" }}
-    <div
-      class="inline-block w-6 h-6"
-      :class="{ 'i-bi-list': !menuVisible, 'i-bi-x': menuVisible }"
-    />
+    <div class="inline-block w-6 h-6" :class="{ 'i-bi-list': !menuVisible, 'i-bi-x': menuVisible }" />
   </button>
 
   <div

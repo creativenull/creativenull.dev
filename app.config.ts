@@ -3,8 +3,7 @@
 export default defineAppConfig({
   site: {
     title: "CreativeNull",
-    description:
-      "Welcome to my website! Check out my blogs, projects or just chill on my dashboard I use for work.",
+    description: "Welcome to my website! Check out my blogs, projects or just chill on my dashboard I use for work.",
     author: "Arnold Chand",
 
     socials: [
