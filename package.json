@@ -30,7 +30,7 @@
     "unocss": "^65.4.0"
   },
   "engines": {
-    "node": "20.x"
+    "node": "22.x"
   },
   "prettier": {
     "printWidth": 120
