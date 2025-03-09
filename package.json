@@ -10,13 +10,13 @@
     "start": "node .output/server/index.mjs"
   },
   "dependencies": {
-    "@nuxt/content": "^2.13.2",
-    "@nuxt/fonts": "^0.10.3",
+    "@nuxt/content": "^3.3.0",
+    "@nuxt/fonts": "^0.11.0",
     "@nuxt/image": "^1.8.1",
     "@vueuse/core": "^12.0.0",
     "@vueuse/nuxt": "^12.0.0",
     "nuxt": "^3.16.0",
-    "nuxt-og-image": "^4.2.0",
+    "nuxt-og-image": "^5.0.2",
     "nuxt-security": "^2.0.0",
     "sitemap": "^8.0.0"
   },

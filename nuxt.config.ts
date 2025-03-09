@@ -12,21 +12,24 @@ export default defineNuxtConfig({
     layoutTransition: { name: "fade", mode: "out-in" },
 
     head: {
-      script: [
-        {
-          src: "https://umami.creativenull.xyz/script.js",
-          "data-website-id": "69f44c4e-c105-4516-bfc9-72480710fad1",
-        },
-      ],
+      script:
+        process.env.NODE_ENV === "production"
+          ? [
+              {
+                src: "https://umami.creativenull.xyz/script.js",
+                "data-website-id": "69f44c4e-c105-4516-bfc9-72480710fad1",
+              },
+            ]
+          : [],
     },
   },
 
   devtools: { enabled: true },
   modules: [
+    "nuxt-security",
     "@unocss/nuxt",
     "@vueuse/nuxt",
     "@nuxt/image",
-    "nuxt-security",
     "@nuxt/fonts",
     "nuxt-og-image",
     "@nuxt/content",
@@ -36,7 +39,7 @@ export default defineNuxtConfig({
     "/": { prerender: true },
   },
 
-  compatibilityDate: "2024-10-05",
+  compatibilityDate: "2025-03-10",
 
   css: [
     "@unocss/reset/tailwind-compat.css",
@@ -46,11 +49,12 @@ export default defineNuxtConfig({
   ],
 
   content: {
-    highlight: {
-      langs: ["json", "js", "ts", "html", "css", "vue", "shell", "lua", "php", "vimscript"],
-      theme: {
-        default: "github-light-default",
-        dark: "github-dark-default",
+    build: {
+      markdown: {
+        highlight: {
+          langs: ["json", "js", "ts", "html", "css", "vue", "shell", "lua", "php", "vimscript"],
+          theme: "github-light",
+        },
       },
     },
   },
@@ -71,6 +75,7 @@ export default defineNuxtConfig({
           // "'strict-dynamic'",
           "'nonce-{{nonce}}'",
           "https://umami.creativenull.xyz",
+          "'wasm-unsafe-eval'"
         ],
       },
     },

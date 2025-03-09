@@ -1,9 +1,16 @@
+<script setup lang="ts">
+const { data: about } = await useAsyncData(
+  "/content/home/about",
+  async () => await queryCollection("home").path("/home/about").first(),
+);
+</script>
+
 <template>
   <div class="space-y-4">
     <h2 class="text-xl text-sky-700 underline underline-offset-8 font-departure">About me</h2>
 
     <section class="font-roboto prose">
-      <ContentDoc path="/home/_about" :head="false" />
+      <ContentRenderer v-if="about" :value="about" />
     </section>
   </div>
 </template>
