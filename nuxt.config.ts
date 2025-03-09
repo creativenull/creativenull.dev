@@ -23,7 +23,6 @@ export default defineNuxtConfig({
 
   devtools: { enabled: true },
   modules: [
-    "@nuxtjs/seo",
     "@unocss/nuxt",
     "@vueuse/nuxt",
     "@nuxt/image",
