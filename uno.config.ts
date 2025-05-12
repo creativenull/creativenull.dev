@@ -1,7 +1,7 @@
 import {
   defineConfig,
   presetTypography,
-  presetWind,
+  presetWind3,
   presetIcons,
   transformerVariantGroup,
   transformerDirectives,
@@ -22,7 +22,7 @@ export default defineConfig({
     "bg-defaults": "bg-gray-200 dark:bg-gray-900",
   },
   presets: [
-    presetWind({ dark: "media" }),
+    presetWind3({ dark: "media" }),
     presetIcons(),
     presetTypography({
       cssExtend: {
