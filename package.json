@@ -15,7 +15,7 @@
     "@nuxt/image": "^1.8.1",
     "@vueuse/core": "^13.1.0",
     "@vueuse/nuxt": "^13.1.0",
-    "nuxt": "^3.16.0",
+    "nuxt": "^3.17.4",
     "nuxt-og-image": "^5.0.2",
     "nuxt-security": "^2.0.0",
     "sitemap": "^8.0.0"
