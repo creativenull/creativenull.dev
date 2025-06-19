@@ -52,7 +52,7 @@ export default defineNuxtConfig({
     build: {
       markdown: {
         highlight: {
-          langs: ["json", "js", "ts", "html", "css", "vue", "shell", "lua", "php", "vimscript"],
+          langs: ["json", "js", "ts", "html", "css", "vue", "shell", "lua", "php", "vimscript", "nix"],
           theme: "github-light",
         },
       },
