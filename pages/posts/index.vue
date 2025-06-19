@@ -3,7 +3,7 @@ useHead({ title: "Posts" });
 
 const { data: posts } = await useAsyncData(
   "/content/posts",
-  async () => await queryCollection("posts").order("publishDate", "DESC").all(),
+  async () => await queryCollection("posts").where("draft", "=", false).order("publishDate", "DESC").all(),
 );
 </script>
 
