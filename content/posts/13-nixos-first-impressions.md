@@ -8,7 +8,7 @@ title: "NixOS: First Impressions"
 description: My quick review of using NixOS for the first time
 tags: review, nixos, linux
 publishDate: "2025-06-22 12:00"
-draft: true
+draft: false
 ---
 
 I've been using NixOS for a couple months now. I even made a [configuration file][nixos-config-dotfiles] and added to my
@@ -17,6 +17,7 @@ dotfiles because of the amount tweaks I was doing on it.
 Here are my quick impressions.
 
 ## First Thoughts
+
 ### File based approach
 
 When I heard that nixos relies on a configuration file to build the system, I was quite intrigued. Primarily because I I
@@ -36,28 +37,35 @@ to get setup with my nvim configuration with additional packages, albeit a littl
 
 All I had to do was run the live CD (running GNOME) and follow the installation instructions so it was quite easy.
 
-I did try out the command line only iso and followed the steps from their manual but given my limited knowledge of how
-to partition a disk I was not able to figure out how to setup the disk without swap partition.
+I did try out the command line only ISO and followed the steps from their manual but given my limited knowledge of how
+on installing a linux distro via the command line, like how to partition a disk, I was not able use this method without
+spending a lot of time.
 
-In the end I did rely on some AI assistance to setup disk partitions and formatting them. But I didn't go that route and
-stuck with just running the live CD for the installation.
+In the end, I did rely on some AI assistance to help me install via the command line and setup disk partitions. But I
+opted to just keep my installation workflow by relying on the live CD method.
 
 ## Problems that I encountered
 
-While the setup and use of nixos is really good, there were some parts of the system that I had some problems with.
+While the setup and use of nixos is really good, there were some parts of the system that I had encountered problems
+with.
 
 These issue mostly affected my development setup and really had nothing to do with nixos itself. But it was definitely
 hampering my workflow as I was used to on my main Ubuntu system.
 
 Well actually there was one issue with just nixos itself, that was deciding where to install the packages. Was it in the
-user or system directory? I ended up installing everything on the system to avoid any namespace confusion.
+user or system directory? I ended up installing everything on the system primarily because I was the only user on the
+machine.
 
 Coming back to my development issues, I was able to get neovim installed with just a simple entry in the configuration
 file. However, getting to install other dependencies that I use alongside neovim was a bit of a challenge.
 
 For example, I use the [wilder.nvim plugin][wilder.nvim] to get auto-completion in ex-commands. Since wilder requires
-installing additional python packages (like, pynvim which is not bundled with the neovim nixpkg) I have specify it to be
-installed in the system.
+installing additional python packages (like, pynvim which is not bundled with the neovim nixpkg, or that it is isolated
+from the system) I have specify it to be installed system-wide.
+
+But then I also need to have the core python packages that is needed by the system. I don't know why, I'm not
+knowledgeable in the python ecosystem but I had to install `wheel`, `setuptools` and `pip` in the system packages so
+that I would be able to install `pynvim`.
 
 ```nix
 environment.systemPackages = with pkgs; [
@@ -71,27 +79,30 @@ environment.systemPackages = with pkgs; [
 ];
 ```
 
-Another example are the [denops plugins][denops], which rely on deno to be installed in the system to run those plugins.
-One of them, my own plugin [projectlocal.vim][projectlocal.vim] relies on deno to be installed in the system.
+Another dependency I use is the [denops plugins][denops], which rely on deno to be installed in the system to run those
+plugins. One of them, my own plugin [projectlocal.vim][projectlocal.vim], relies on deno to be installed in the system.
+However, this was an easy install. I just had to specify deno in the configuration file as a system package.
 
 In addition to denops, there is another plugin which is the [denops-shared-server][denops-shared-server] that I use to
-let denops run in the background in a daemon process. That way it's faster to load denops plugins.
+let denops run in the background in a systemd process. That way it's faster to load denops plugins.
 
 However, nixos does not have a proper way to get the shared server running. Every time I restart the system I have to
-also restart the shared server because it will error when I open nvim after the restart.
+also manually restart the shared server because it will error out when I open nvim after a system restart.
 
-I did try to add a systemd entry in the configuration file but since this is a user systemd process, it's not very clear
-how to set it up. All I see is how to setup a systemd entry if it's for the system and not for the user.
+I did try to add a systemd entry in the configuration file but since this is a user systemd process, I don't know how to
+set it up and I'm not able to find any documentation on how to do it.
 
-## Conclusion
+### Note on flakes and home-manager
 
 As a side note, I did look into flakes to see if I can version control my configuration but again like I mentioned in my
-experience with denops and its shared server, it's extremely difficult to find article that could further expand of how
-to version lock it instead of just listing out the packages from different sources. I need a deep dive article, to which
-I have yet to find on nix flakes.
+experience with denops and its shared server setup as a systemd process, it's extremely difficult to find article that
+could further expand of how to version lock it instead of just listing out the packages from different sources. I need
+to find an in-depth article, to which I have yet to find on nix flakes.
 
 As for home-manager, since I already have a script for my dotfiles, I don't see any need for it. While I did try it, I
 got confused as to how I would use it with nix flakes and how does it factor in the nixos configuration file.
+
+## Conclusion
 
 Anyway, while there are still some problems to fix, I feel like nixos is still a great entry for me to tinker around
 with the configuration file. I will still continue to work on the file, albeit when I get some more time out of work.
