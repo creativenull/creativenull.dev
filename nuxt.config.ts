@@ -1,5 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  nitro: {
+    compressPublicAssets: true,
+  },
   site: {
     url: "http://localhost:3000",
     name: "CreativeNull",
@@ -37,6 +40,8 @@ export default defineNuxtConfig({
 
   routeRules: {
     "/": { prerender: true },
+    "/_nuxt/**": { headers: { "cache-control": "max-age=31536000, immutable" } },
+    "/api/**": { cors: true },
   },
 
   compatibilityDate: "2025-03-10",
