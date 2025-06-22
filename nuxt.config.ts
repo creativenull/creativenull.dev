@@ -39,7 +39,11 @@ export default defineNuxtConfig({
   ],
 
   routeRules: {
-    "/": { prerender: true },
+    "/": {
+      prerender: true,
+      headers: { "cache-control": "no-cache, no-store, must-revalidate" },
+    },
+    "/**": { headers: { "cache-control": "no-cache, no-store, must-revalidate" } },
     "/_nuxt/**": { headers: { "cache-control": "max-age=31536000, immutable" } },
     "/api/**": { cors: true },
   },
@@ -80,7 +84,7 @@ export default defineNuxtConfig({
           // "'strict-dynamic'",
           "'nonce-{{nonce}}'",
           "https://umami.creativenull.xyz",
-          "'wasm-unsafe-eval'"
+          "'wasm-unsafe-eval'",
         ],
       },
     },
