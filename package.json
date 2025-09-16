@@ -11,13 +11,13 @@
     "start": "node .output/server/index.mjs"
   },
   "dependencies": {
-    "@nuxt/content": "^3.3.0",
+    "@nuxt/content": "^3.7.0",
     "@nuxt/fonts": "^0.11.0",
     "@nuxt/image": "^1.8.1",
     "@vueuse/core": "^13.1.0",
     "@vueuse/nuxt": "^13.1.0",
-    "better-sqlite3": "^11.10.0",
-    "nuxt": "^3.17.4",
+    "better-sqlite3": "^12.2.0",
+    "nuxt": "^4.1.2",
     "nuxt-og-image": "^5.0.2",
     "nuxt-security": "^2.0.0",
     "sitemap": "^8.0.0"
