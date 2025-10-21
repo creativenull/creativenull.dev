@@ -9,7 +9,7 @@ const { data: about } = await useAsyncData(
   <div class="space-y-4">
     <h2 class="text-xl text-sky-700 underline underline-offset-8 font-departure">About me</h2>
 
-    <section class="font-roboto prose">
+    <section class="font-roboto prose prose-gray dark:prose-invert">
       <ContentRenderer v-if="about" :value="about" />
     </section>
   </div>

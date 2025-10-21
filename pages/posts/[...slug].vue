@@ -25,7 +25,7 @@ useHead({
 
 <template>
   <main class="px-2 sm:px-0 pt-[4rem]">
-    <article class="prose mx-auto">
+    <article class="prose prose-gray dark:prose-invert mx-auto">
       <Transition name="fade-slide">
         <div v-if="loaded">
           <h1 v-if="post" class="text-2xl sm:text-4xl mb-0">{{ post.title }}</h1>
