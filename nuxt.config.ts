@@ -31,7 +31,6 @@ export default defineNuxtConfig({
   modules: [
     "nuxt-security",
     "@unocss/nuxt",
-    "@vueuse/nuxt",
     "@nuxt/image",
     "@nuxt/fonts",
     "nuxt-og-image",
