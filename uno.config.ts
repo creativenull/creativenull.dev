@@ -30,7 +30,7 @@ export default defineConfig({
           "--at-apply": "font-bold",
         },
         pre: {
-          "--at-apply": "border border-dashed border-gray-400 dark:border-gray-500 bg-gray-200 dark:bg-none",
+          border: "1px dashed #9ca3af",
         },
         "pre code": {
           "--at-apply": "font-jetbrains",
@@ -45,7 +45,10 @@ export default defineConfig({
           content: "''",
         },
         a: {
-          "--at-apply": "transition duration-200 hover:text-sky-600",
+          transition: "color 0.2s",
+        },
+        "a:hover": {
+          "color": "#0284c7",
         },
         "section[data-footnotes]": {
           "--at-apply": "text-xs",
@@ -63,6 +66,9 @@ export default defineConfig({
           "--at-apply": "ml-2",
         },
       },
+      colorScheme: {
+        "pre-bg": [200, 800],
+      }
     }),
   ],
   transformers: [transformerVariantGroup(), transformerDirectives()],
