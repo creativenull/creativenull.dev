@@ -61,7 +61,10 @@ export default defineNuxtConfig({
       markdown: {
         highlight: {
           langs: ["json", "js", "ts", "html", "css", "vue", "shell", "lua", "php", "vimscript", "nix"],
-          theme: "github-light",
+          theme: {
+            default: "min-light",
+            dark: "min-dark",
+          }
         },
       },
     },
