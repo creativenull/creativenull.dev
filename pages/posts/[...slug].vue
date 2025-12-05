@@ -8,6 +8,10 @@ const { data: post } = await useAsyncData(
   async () => await queryCollection("posts").path(route.path).first(),
 );
 
+if (!post.value) {
+  throw createError({ statusCode: 404, statusMessage: "Post not found" });
+}
+
 if (post.value?.ogImage) {
   defineOgImage(post.value.ogImage);
 }
