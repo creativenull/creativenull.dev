@@ -3,11 +3,11 @@ path: /posts/14-why-ai-wont-affect-me-for-now
 ogImage:
   component: Post
   props:
-    publishDate: "2025-12-05 13:00"
+    publishDate: "2025-12-05 13:03"
 title: "Why AI won't affect me (for now)"
 description: AI is replacing software development jobs around the world, or so I've heard alegedly
 tags: ai, webdev, personal
-publishDate: "2025-12-05 13:00"
+publishDate: "2025-12-05 13:03"
 ---
 
 Now you might be wondering "hah this guy doesn't even know whats going around the world and how AI is affecting us all
