@@ -11,9 +11,9 @@ publishDate: "2025-12-05 13:03"
 draft: false
 ---
 
-Now you might be wondering "hah this guy doesn't even know whats going around the world and how AI is affecting us all
-right now!". Well you might be right eventually, but I'm here talking about myself and around my environment in this
-tiny island.
+Now you might be wondering "what are you taking about? AI is affecting everyone". While I hear this sentiment, I only
+see this echo chamber happening inside Twitter and usually those from US and not where I'm from. So in this post I will
+post my thoughts and how this affects me and around my environment in this tiny island.
 
 Don't get me wrong I have seen some AI being used here. For example, there was an [app that helped student
 get answers to their CXC exam questions][cxc]. It looks to work really well, until you look closely and realise and
