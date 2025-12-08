@@ -13,6 +13,7 @@ const appConfig = useAppConfig();
           target="_blank"
           tabindex="0"
           :title="`navigate to ${social.name}`"
+          :rel="social.name === 'Mastodon' ? 'me' : null"
         >
           <div :class="`${social.iconClass} inline-block`"></div>
           {{ social.name }}
