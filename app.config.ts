@@ -20,7 +20,7 @@ export default defineAppConfig({
       {
         name: "Mastodon",
         iconClass: "light:i-logos-mastodon-icon dark:i-simple-icons-mastodon",
-        url: "https://elk.zone/mastodon.online/@creativenull",
+        url: "https://mastodon.online/@creativenull",
       },
       {
         name: "Twitter",
