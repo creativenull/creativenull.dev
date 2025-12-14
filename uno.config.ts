@@ -48,7 +48,7 @@ export default defineConfig({
           transition: "color 0.2s",
         },
         "a:hover": {
-          "color": "#0284c7",
+          color: "#0284c7",
         },
         "section[data-footnotes]": {
           "--at-apply": "text-xs",
@@ -68,7 +68,7 @@ export default defineConfig({
       },
       colorScheme: {
         "pre-bg": [200, 800],
-      }
+      },
     }),
   ],
   transformers: [transformerVariantGroup(), transformerDirectives()],

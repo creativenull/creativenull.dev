@@ -28,7 +28,7 @@ The use of AI in these examples are great, but then the usual patterns still exi
 a database. How are stats shown? From a quick python script analysis. My belief is that there are devs in the back doing
 these things and I personally do not see this change any time soon.
 
-When it comes to me working with AI, I use it very often especially for [auto-completion via Codeium][windsurf] 
+When it comes to me working with AI, I use it very often especially for [auto-completion via Codeium][windsurf]
 (now Windsurf) in Neovim. I've been slowly getting into agentic coding as well like using [codex][codex] and
 [claude code][claude-code], mainly claude code as I've been getting good results from it but nothing too fancy.
 

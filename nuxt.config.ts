@@ -28,14 +28,7 @@ export default defineNuxtConfig({
   },
 
   devtools: { enabled: true },
-  modules: [
-    "nuxt-security",
-    "@unocss/nuxt",
-    "@nuxt/image",
-    "@nuxt/fonts",
-    "nuxt-og-image",
-    "@nuxt/content",
-  ],
+  modules: ["nuxt-security", "@unocss/nuxt", "@nuxt/image", "@nuxt/fonts", "nuxt-og-image", "@nuxt/content"],
 
   routeRules: {
     "/": {
@@ -64,7 +57,7 @@ export default defineNuxtConfig({
           theme: {
             default: "min-light",
             dark: "min-dark",
-          }
+          },
         },
       },
     },
