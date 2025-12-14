@@ -15,15 +15,15 @@
     "@nuxt/fonts": "^0.12.1",
     "@nuxt/image": "^2.0.0",
     "better-sqlite3": "^12.5.0",
-    "nuxt": "^4.2.1",
-    "nuxt-og-image": "^5.1.12",
+    "nuxt": "^4.2.2",
+    "nuxt-og-image": "^5.1.13",
     "nuxt-security": "^2.5.0",
     "sitemap": "^9.0.0"
   },
   "devDependencies": {
     "@iconify-json/bi": "^1.2.7",
     "@iconify-json/logos": "^1.2.10",
-    "@iconify-json/simple-icons": "^1.2.61",
+    "@iconify-json/simple-icons": "^1.2.62",
     "@unocss/nuxt": "^66.5.10",
     "prettier": "^3.7.4",
     "typescript": "^5.9.3",
