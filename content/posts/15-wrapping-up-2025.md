@@ -16,7 +16,7 @@ I’ve been seeing too many “wrapped” posts lately and thought I’d write s
 2025 has been an interesting year for me. It feels like the slowest year of my life, with plenty of ups and downs.
 
 Starting with the personal side: I’ve been working on getting a new house fixed up so I can move in. I lived in an
-apartment for the past decade and finally decided—after securing the funds—to build a house. Granted, it’s not
+apartment for the past decade and finally decided - after securing the funds - to build a house. Granted, it’s not
 technically my house but my parents’, and I wasn’t interested in it at the beginning. I’m still not particularly
 interested, but I had to step up due to disagreements between my parents and the contractor.
 
@@ -24,7 +24,7 @@ I took on that responsibility at the beginning of the year and hired workers to 
 house, given how limited our funds were after the contractor used them up.
 
 It’s been one month since I fully moved in. My initial focus was getting the interior work done so the place would be
-livable. The plan is to shift attention to the exterior next—things like the property wall, landscaping, and gates. So
+livable. The plan is to shift attention to the exterior next-things like the property wall, landscaping, and gates. So
 far, I like the place and don’t have much to complain about. The workers did a good job getting the work done, although
 some work still remains and their motivation is low, which means persistent calling is needed to get them to come back
 and finish 😅.
