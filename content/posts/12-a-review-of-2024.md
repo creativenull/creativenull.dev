@@ -67,7 +67,7 @@ this and my work and it's short deadlines that they are giving me 😂
 ## Wrapping up
 
 Overall, I don't think I had much of a great year. I promised in [my previous post][] that I would
-post more, be more productive but ti didn't pan out the way I hoped it would've. I was not able to
+post more, be more productive but it didn't pan out the way I hoped it would've. I was not able to
 travel, I was not able to work much on my open-source projects, and I was not able to make any time
 for myself.
 
