@@ -6,7 +6,7 @@ export default defineNuxtConfig({
   site: {
     url: "http://localhost:3000",
     name: "CreativeNull",
-    description: "Welcome to my website! Check out my blogs, projects or just chill on my dashboard I use for work.",
+    description: "Welcome to my website! Check out my blogs and projects, my dashboard is still a work in progress",
     defaultLocale: "en",
   },
 
