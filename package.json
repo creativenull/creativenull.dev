@@ -11,7 +11,7 @@
     "start": "node .output/server/index.mjs"
   },
   "dependencies": {
-    "@nuxt/content": "^3.9.0",
+    "@nuxt/content": "^3.10.0",
     "@nuxt/fonts": "^0.12.1",
     "@nuxt/image": "^2.0.0",
     "better-sqlite3": "^12.5.0",
@@ -24,10 +24,10 @@
     "@iconify-json/bi": "^1.2.7",
     "@iconify-json/logos": "^1.2.10",
     "@iconify-json/simple-icons": "^1.2.63",
-    "@unocss/nuxt": "^66.5.10",
+    "@unocss/nuxt": "^66.5.11",
     "prettier": "^3.7.4",
     "typescript": "^5.9.3",
-    "unocss": "^66.5.10"
+    "unocss": "^66.5.11"
   },
   "engines": {
     "node": "22.x"
