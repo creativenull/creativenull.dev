@@ -17,7 +17,7 @@ const { loaded } = useFadeSlideLoadingState();
         <div class="md:block hidden">
           <HomeFlowTimer />
           <HomeCalendar />
-          <HomeTasks />
+          <!-- <HomeTasks /> -->
         </div>
       </div>
       <div class="space-y-4 my-8">
