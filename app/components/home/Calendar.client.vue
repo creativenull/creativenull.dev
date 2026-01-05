@@ -20,7 +20,7 @@ const { today, dates } = useCalendarDate();
           v-for="(day, j) in days"
           :key="`day-${j}`"
           :class="{
-            'bg-sky-700 rounded-full': day === today.getDate(),
+            'bg-sky-700 text-gray-200 rounded-full': day === today.getDate(),
             'w-1/2 flex items-center justify-center px-4 py-1': true,
           }"
         >
