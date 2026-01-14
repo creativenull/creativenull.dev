@@ -14,7 +14,7 @@
     "@nuxt/content": "^3.10.0",
     "@nuxt/fonts": "^0.12.1",
     "@nuxt/image": "^2.0.0",
-    "better-sqlite3": "^12.5.0",
+    "better-sqlite3": "^12.6.0",
     "nuxt": "^4.2.2",
     "nuxt-og-image": "^5.1.13",
     "nuxt-security": "^2.5.0",
@@ -23,7 +23,7 @@
   "devDependencies": {
     "@iconify-json/bi": "^1.2.7",
     "@iconify-json/logos": "^1.2.10",
-    "@iconify-json/simple-icons": "^1.2.65",
+    "@iconify-json/simple-icons": "^1.2.66",
     "@unocss/nuxt": "^66.5.12",
     "prettier": "^3.7.4",
     "typescript": "^5.9.3",
