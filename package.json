@@ -11,11 +11,11 @@
     "start": "node .output/server/index.mjs"
   },
   "dependencies": {
-    "@nuxt/content": "^3.11.0",
+    "@nuxt/content": "^3.11.2",
     "@nuxt/fonts": "^0.12.1",
     "@nuxt/image": "^2.0.0",
     "better-sqlite3": "^12.6.2",
-    "nuxt": "^4.3.0",
+    "nuxt": "^4.3.1",
     "nuxt-og-image": "^5.1.13",
     "nuxt-security": "^2.5.1",
     "sitemap": "^9.0.0"
@@ -23,7 +23,7 @@
   "devDependencies": {
     "@iconify-json/bi": "^1.2.7",
     "@iconify-json/logos": "^1.2.10",
-    "@iconify-json/simple-icons": "^1.2.67",
+    "@iconify-json/simple-icons": "^1.2.70",
     "@unocss/nuxt": "^66.6.0",
     "prettier": "^3.8.1",
     "typescript": "^5.9.3",
