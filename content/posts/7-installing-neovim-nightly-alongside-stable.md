@@ -107,7 +107,7 @@ neovim nightly.
 
 Add your config at `$HOME/.config/nvim/init.vim` and have two separate configs for stable and nightly.
 
-```vim
+```vimscript
 " init.vim
 
 let $NVIM_CONFIG_DIR = expand('$HOME/.config/nvim')
@@ -121,8 +121,6 @@ else
 ```
 
 Then you can have a `stable.vim` for your stable config and then `nightly.vim` for your nightly config.
-
----
 
 However, we can take this a step further and separate them in different directories. So you can have a stable config at
 `$HOME/.config/nvim` and have your nightly config at `$HOME/.config/nvim-nightly`. While this works, there are a couple
@@ -138,7 +136,7 @@ switch between stable and nightly. This was due to me having different plugins f
 The solution was to keep them in separate directory so there are no namespace clashes. So we should have the following
 directory structure for stable (`nvim`) and nightly (`nvim-nightly`).
 
-```
+```sh
 $HOME/.config/
 ├── nvim
 │   └── init.vim
@@ -148,7 +146,7 @@ $HOME/.config/
 
 The same for the local directory:
 
-```
+```sh
 $HOME/.local/share/
 ├── nvim
 │   ├── site/
@@ -174,7 +172,7 @@ Finally, we need to specify our config and local directory to be part of the `ru
 picking plugins installed via a plugin manager. So within the config file, we want to remove all instances where we
 don't want `runtimepath` to search for and explicitly add our own custom path.
 
-```vim
+```vimscript
 " $HOME/.config/nvim-nightly/init.vim
 
 set runtimepath-=~/.config/nvim
@@ -193,7 +191,7 @@ set runtimepath^=~/.local/share/nvim-nightly/site
 If you are using the native package handler, or using a plugin manager that utilizes the build-in package handling in
 vim like minpac. Then you may have to specify the custom path to your local directory.
 
-```vim
+```vimscript
 " $HOME/.config/nvim-nightly/init.vim
 
 set packpath-=~/.config/nvim
@@ -230,7 +228,7 @@ getting it installed.
 If you have problems accessing docs, since it was compiled from source you will have to manually generate docs.
 Fortunately, this can be done just once by running the vim ex command:
 
-```vim
+```vimscript
 :helptags $VIMRUNTIME/doc
 ```
 
