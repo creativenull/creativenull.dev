@@ -1,8 +1,15 @@
 export function useCalendarDate() {
   const today = new Date();
+  const month = today.toLocaleString("en-TT", { month: "long" });
+  const year = today.toLocaleString("en-TT", { year: "numeric" });
   const dates = ref<number[][]>(getDates(today));
 
-  return { today, dates };
+  return {
+    dates,
+    month,
+    today,
+    year,
+  };
 }
 
 /**

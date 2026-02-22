@@ -1,10 +1,11 @@
 <script lang="ts" setup>
-const { today, dates } = useCalendarDate();
+const { today, dates, month, year } = useCalendarDate();
 </script>
 
 <template>
   <div class="py-4">
     <h2 class="text-xl">Calendar</h2>
+    <h4 class="capitalize mt-2">{{ month }} {{ year }}</h4>
     <div class="w-1/2">
       <div class="grid grid-cols-7">
         <span>Sun</span>
