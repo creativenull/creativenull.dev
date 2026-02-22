@@ -33,6 +33,7 @@
     "node": "22.x"
   },
   "prettier": {
-    "printWidth": 120
+    "printWidth": 120,
+    "proseWrap": "always"
   }
 }
