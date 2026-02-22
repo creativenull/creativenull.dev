@@ -16,13 +16,13 @@ const { today, dates, month, year } = useCalendarDate();
         <span>Fri</span>
         <span>Sat</span>
       </div>
-      <div v-for="(days, i) in dates" :key="`date-${i}`" class="grid grid-cols-7 text-gray-900">
+      <div v-for="(days, i) in dates" :key="`date-${i}`" class="grid grid-cols-7 text-gray-900 dark:text-white">
         <span
           v-for="(day, j) in days"
           :key="`day-${j}`"
           :class="{
             'bg-sky-700 text-gray-200 rounded-full': day === today.getDate(),
-            'text-gray-400': day < today.getDate(),
+            'text-gray-500': day < today.getDate(),
             'w-1/2 flex items-center justify-center px-4 py-1': true,
           }"
         >
