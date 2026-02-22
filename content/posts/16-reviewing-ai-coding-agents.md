@@ -6,7 +6,7 @@ ogImage:
     publishDate: "2026-02-22 15:00"
 title: Reviewing AI coding agents
 description: Reviewing AI coding agents that I've been using this past couple months
-tags: personal
+tags: personal, coding, ai, tools, neovim, terminal
 publishDate: "2026-02-22 15:00"
 draft: false
 ---
