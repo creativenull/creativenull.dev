@@ -2,7 +2,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "fmt": "prettier --write .",
+    "fmt": "prettier --write ./**/*.{js,ts,vue,md,html,css}",
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
