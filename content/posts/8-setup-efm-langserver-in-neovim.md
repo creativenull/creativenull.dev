@@ -14,14 +14,12 @@ draft: false
 With the [news of null-ls being archived][1] there are concerns as to what other options users now have to run linters
 and formatters within an LSP-centric workflow.
 
-While I wouldn't look for an alternative for a while (maybe in a year?)
-there are some great options out there. In this post I will cover one alternative to null-ls called [efm-langserver][2]
-along with a helper plugin I created to help ease its setup.
+While I wouldn't look for an alternative for a while (maybe in a year?) there are some great options out there. In this
+post I will cover one alternative to null-ls called [efm-langserver][2] along with a helper plugin I created to help
+ease its setup.
 
-::tip
-There are also other options out there like: [nvim-lint][9], [formatter.nvim][10],
-[guard.nvim][11], [diagnostic-languageserver][12] and many more that I'm not aware of. However,
-the focus here is only on efm-langserver.
+::tip There are also other options out there like: [nvim-lint][9], [formatter.nvim][10], [guard.nvim][11],
+[diagnostic-languageserver][12] and many more that I'm not aware of. However, the focus here is only on efm-langserver.
 ::
 
 ## Table of Contents
@@ -36,8 +34,8 @@ the focus here is only on efm-langserver.
 
 From the repository readme:
 
-> General purpose Language Server that can use specified error message format generated from specified command.
-> This is useful for editing code with linter.
+> General purpose Language Server that can use specified error message format generated from specified command. This is
+> useful for editing code with linter.
 
 It is written in Go and it uses the `errorformat` (`:help errorformat`) interface to parse messages/output from stdout
 into neovim diagnostic. This allows you to call CLI tools such as eslint or prettier and then channels them into neovim
@@ -50,8 +48,8 @@ First let's install the language server. I'll show two ways: the manual way and 
 
 ### Manual Installation
 
-The simplest way would be to just download from the efm-langserver repository and then extract it to a location added
-to your `PATH`. I usually add this to `~/.local/bin` since I've added this to my `PATH` variable, but you can add this
+The simplest way would be to just download from the efm-langserver repository and then extract it to a location added to
+your `PATH`. I usually add this to `~/.local/bin` since I've added this to my `PATH` variable, but you can add this
 anywhere you prefer, as long as it is globally available.
 
 1. Download the latest [language server from the releases page][4].
@@ -132,8 +130,8 @@ local languages = {
 }
 ```
 
-Note that `eslint`, and `prettier` are lua tables which in turn makes `javascript = { ... }`
-(or `javascriptreact = { ... }`) a table of tables, which is the required format by efm-langserver.
+Note that `eslint`, and `prettier` are lua tables which in turn makes `javascript = { ... }` (or
+`javascriptreact = { ... }`) a table of tables, which is the required format by efm-langserver.
 
 Finally, we can add the following to our nvim-lspconfig `setup()`.
 
@@ -275,8 +273,8 @@ for the tools for you.
 ## Final Thoughts
 
 This post ended up being longer that I thought it would. But in conclusion, there are alternatives to null-ls like
-efm-langserver and can provide the same features. I plan to make more posts like this for other alternatives like
-the diagnostic-languageserver which is the same as efm-langserver but written in TypeScript. I also made a plugin for
+efm-langserver and can provide the same features. I plan to make more posts like this for other alternatives like the
+diagnostic-languageserver which is the same as efm-langserver but written in TypeScript. I also made a plugin for
 diagnostic-languageserver called [creativenull/diagnosticls-configs-nvim][13].
 
 ---

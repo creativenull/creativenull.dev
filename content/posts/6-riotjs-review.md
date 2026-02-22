@@ -12,8 +12,8 @@ draft: false
 ---
 
 I haven't had much time to check out other frameworks, but finally got the time for this one. I have been looking at it
-and also been streaming my progress over at [twitch][twitch]. Although there were only two streams, most of the work
-was offline. Here are my two cents to it, and this is by no means a robust framework review it's just how I went about
+and also been streaming my progress over at [twitch][twitch]. Although there were only two streams, most of the work was
+offline. Here are my two cents to it, and this is by no means a robust framework review it's just how I went about
 experiencing [riot][riot].
 
 ## Simple JS framework with a hint of vue and svelte
@@ -205,25 +205,25 @@ It does cover a lot of basics of the framework and guides you on how to extend a
 what you want to work with. As I showed with the code above on how to implement a MobX wrapper with riot to get a state
 management working with the app.
 
-I don't think the documentation is lacking much. However, I do feel like there could be more that can be added to help
-a beginner understand and get started with using riot. From what I see this framework is aimed at a intermediate level
+I don't think the documentation is lacking much. However, I do feel like there could be more that can be added to help a
+beginner understand and get started with using riot. From what I see this framework is aimed at a intermediate level
 developer.
 
 ## Typescript Support
 
 While it's not very evident in the docs, there is typescript support, but not 100%. In riot they are called
-pre-processors and have support to write TypeScript, SASS, LESS, pug, etc within a `.riot` file - just like vue.
-I didn't get to that point, or at least I tried only to be stopped at a point where I was supposed to "create my
+pre-processors and have support to write TypeScript, SASS, LESS, pug, etc within a `.riot` file - just like vue. I
+didn't get to that point, or at least I tried only to be stopped at a point where I was supposed to "create my
 pre-processor". While there was an example of this in their [example repo][riot-example] it was not useful to help me
 get started with building a typescript project.
 
 ## Developer Experience
 
 Another thing that comes with typescript is the language server support. This should still work with `.ts` files but
-riot does not have such feature for their `.riot` files. Vue has the Vetur or `vue-language-server` and svelte also
-have a language server to provide language features to their `.svelte` but that is not the case with riot. You will end
-up trying to debug your code only through the browser (thanks to webpack and source-maps) but any undefined behaviour
-can catch you. Especially, when calling a function and have it expect something but there is no handling of undeinfined
+riot does not have such feature for their `.riot` files. Vue has the Vetur or `vue-language-server` and svelte also have
+a language server to provide language features to their `.svelte` but that is not the case with riot. You will end up
+trying to debug your code only through the browser (thanks to webpack and source-maps) but any undefined behaviour can
+catch you. Especially, when calling a function and have it expect something but there is no handling of undeinfined
 behaviour in the app.
 
 ## To be continued

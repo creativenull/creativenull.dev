@@ -107,7 +107,8 @@ got confused as to how I would use it with nix flakes and how does it factor in 
 Anyway, while there are still some problems to fix, I feel like nixos is still a great entry for me to tinker around
 with the configuration file. I will still continue to work on the file, albeit when I get some more time out of work.
 
-[nixos-config-dotfiles]: https://github.com/creativenull/dotfiles/blob/a3d87e618d7d0a105c7b2a5e5de6a10bfb6a0197/scripts/nixos/configuration.nix
+[nixos-config-dotfiles]:
+  https://github.com/creativenull/dotfiles/blob/a3d87e618d7d0a105c7b2a5e5de6a10bfb6a0197/scripts/nixos/configuration.nix
 [wilder.nvim]: https://github.com/gelguy/wilder.nvim
 [denops]: https://github.com/vim-denops/denops.vim
 [projectlocal.vim]: https://github.com/creativenull/projectlocal.vim

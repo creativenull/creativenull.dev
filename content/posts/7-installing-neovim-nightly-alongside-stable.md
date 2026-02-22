@@ -20,8 +20,8 @@ include (but still in development):
 
 You can have a [look at their roadmap here](https://neovim.io/roadmap/) to see what else is in development.
 
-But today, my focus will be on installing nightly (or v0.5, but for this post I will refer to as nightly) alongside
-your stable version.
+But today, my focus will be on installing nightly (or v0.5, but for this post I will refer to as nightly) alongside your
+stable version.
 
 ## Why two different versions and not just update to nightly?
 
@@ -31,8 +31,8 @@ encounter breaking changes.
 
 I also want to try out the features from nightly and mess around but rather keep those separate to my stable config.
 
-If you also use vim at work but also want to experiment with the new features from nightly, then read on. Else you
-would most likely not care about the majority of this post, but feel free to read 🙂.
+If you also use vim at work but also want to experiment with the new features from nightly, then read on. Else you would
+most likely not care about the majority of this post, but feel free to read 🙂.
 
 ## Requirements
 
@@ -70,8 +70,8 @@ you should get no error messages and be able to see the executable at `build/bin
 ## Setup
 
 Now we can also install the binary in a location of choice (by running
-`make CMAKE_INSTALL_PREFIX=/path/to/location install`, but I would prefer to just leave the binary at
-`build/bin/nvim` and work from there. The downside is that we will need to provide the runtime explicitly, so we run:
+`make CMAKE_INSTALL_PREFIX=/path/to/location install`, but I would prefer to just leave the binary at `build/bin/nvim`
+and work from there. The downside is that we will need to provide the runtime explicitly, so we run:
 
 ```sh
 VIMRUNTIME=runtime ./build/bin/nvim
@@ -79,9 +79,9 @@ VIMRUNTIME=runtime ./build/bin/nvim
 
 Congratulations! You got vim successfully compiled and running 🎉🥳🎉
 
-At this point you are done. But writing the above line every time you want to open nightly is quite a hassle,
-especially when you want to open from your project directory but the runtime directory is not relative to your project,
-so you will have to explicitly include the full path to the runtime and the neovim binary.
+At this point you are done. But writing the above line every time you want to open nightly is quite a hassle, especially
+when you want to open from your project directory but the runtime directory is not relative to your project, so you will
+have to explicitly include the full path to the runtime and the neovim binary.
 
 A better way, would be to create a script file and call that instead. So let's make one!
 
@@ -90,7 +90,8 @@ touch $HOME/.local/bin/nv.sh
 chmod u+x $HOME/.local/bin/nv.sh
 ```
 
-> A quick note, it is convention that when making script file you create it with the `.sh` extension, but you can omit that and just use the script name (like `nv` instead of `nv.sh`).
+> A quick note, it is convention that when making script file you create it with the `.sh` extension, but you can omit
+> that and just use the script name (like `nv` instead of `nv.sh`).
 
 Now inside `nv.sh`:
 
@@ -99,8 +100,8 @@ Now inside `nv.sh`:
 VIMRUNTIME=$HOME/neovim/runtime $HOME/neovim/build/bin/nvim
 ```
 
-Assuming that `$HOME/.local/bin` is in your `$PATH` environment, calling `nv.sh` anywhere from your terminal should
-open neovim nightly.
+Assuming that `$HOME/.local/bin` is in your `$PATH` environment, calling `nv.sh` anywhere from your terminal should open
+neovim nightly.
 
 ## Config
 
@@ -123,10 +124,10 @@ Then you can have a `stable.vim` for your stable config and then `nightly.vim` f
 
 ---
 
-However, we can take this a step further and separate them in different directories. So you can have a stable config
-at `$HOME/.config/nvim` and have your nightly config at `$HOME/.config/nvim-nightly`. While this works, there are a
-couple more tweaks you will have to do in order for it to work properly. If you are interested in this method then I
-would recommend you to read the next section, otherwise just jump to updating neovim nightly further below 😜.
+However, we can take this a step further and separate them in different directories. So you can have a stable config at
+`$HOME/.config/nvim` and have your nightly config at `$HOME/.config/nvim-nightly`. While this works, there are a couple
+more tweaks you will have to do in order for it to work properly. If you are interested in this method then I would
+recommend you to read the next section, otherwise just jump to updating neovim nightly further below 😜.
 
 ### Separate directory for stable and nightly (OPTIONAL)
 
@@ -218,9 +219,9 @@ make distclean && make CMAKE_BUILD_TYPE=Release
 
 ## Conclusion
 
-I hope this guide helps you in setting up neovim nightly alongside the stable version, or at least to helps me
-reference in-case I forget. It is one of many ways of getting them installed in a machine, but this is the way I
-preferred on getting it installed.
+I hope this guide helps you in setting up neovim nightly alongside the stable version, or at least to helps me reference
+in-case I forget. It is one of many ways of getting them installed in a machine, but this is the way I preferred on
+getting it installed.
 
 ## Troubleshooting
 

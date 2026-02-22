@@ -6,8 +6,8 @@ ogImage:
     publishDate: "2024-01-01 08:00"
 title: Plans for 2024
 description:
-  A quick overview on what I would like to do for the next year. Which involves open-source, job opportunities
-  and travel.
+  A quick overview on what I would like to do for the next year. Which involves open-source, job opportunities and
+  travel.
 tags: personal, goals
 publishDate: "2024-01-01 08:00"
 draft: false
@@ -19,8 +19,8 @@ missing some part of my life that I could've had. It's hard to explain, but this
 to find out what that was.
 
 2023 started out great, was able to spend time with family and friends online on discord. While I wasn't working, I was
-playing games with friends. Work was quite well as I commuted to the office, now that the restrictions were removed,
-and got to interact with my colleagues on some projects.
+playing games with friends. Work was quite well as I commuted to the office, now that the restrictions were removed, and
+got to interact with my colleagues on some projects.
 
 Now, I can't remember what exactly I've done that year, but I guess my peak for 2023 was the trip to China. It was a
 week-long business trip with my client, and it was an amazing experience visiting another country and being able to
@@ -37,9 +37,9 @@ I want 2024 to be more memorable! I want to be able to do different things as mu
 more if possible and just be able to relax more.
 
 Work has been quite mundane, so I want to be able to work on my open source projects and find some projects that I want
-to contribute and be part of a community. I don't think I've had an opportunity to be well invested in a tech that I
-can be part of yet, so I want to stop jumping around every time there is something new that comes out and just stay with
-a group that is consistent. I think given my nature to explore more now, it's fine if I can't commit myself into a
+to contribute and be part of a community. I don't think I've had an opportunity to be well invested in a tech that I can
+be part of yet, so I want to stop jumping around every time there is something new that comes out and just stay with a
+group that is consistent. I think given my nature to explore more now, it's fine if I can't commit myself into a
 community, but I would hope there is something out there that I just need to find it.
 
 And while it is great working as a freelancer, I want to be able to work for a company full-time just to experience what

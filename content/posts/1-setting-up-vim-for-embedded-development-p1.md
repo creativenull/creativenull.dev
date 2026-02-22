@@ -11,19 +11,24 @@ publishDate: "2019-02-08 08:00"
 draft: false
 ---
 
-::tip
-This is a two part series on how my vim is setup for embedded systems development. The first part
-shows what vim plugins I use and how I have them setup, while part two will cover the cmake
-portion on setting up a build workflow and a template.
-::
+::tip This is a two part series on how my vim is setup for embedded systems development. The first part shows what vim
+plugins I use and how I have them setup, while part two will cover the cmake portion on setting up a build workflow and
+a template. ::
 
-There has been a lot of tutorials on setting up vim for a Python/JavaScript/Java/C/C++ environment, but I did not find a variety of tutorials on how to setup a C/C++ environment for embedded development. I did, however, find one great post [written by Alexey][ref-1] where he did explain how to setup for one. Although his post does a great job explaining, there were still some things missing that I want to add for my embedded development environment. Things that I wanted to work for my setup:
+There has been a lot of tutorials on setting up vim for a Python/JavaScript/Java/C/C++ environment, but I did not find a
+variety of tutorials on how to setup a C/C++ environment for embedded development. I did, however, find one great post
+[written by Alexey][ref-1] where he did explain how to setup for one. Although his post does a great job explaining,
+there were still some things missing that I want to add for my embedded development environment. Things that I wanted to
+work for my setup:
 
 - Using `cmake` instead of `make`.
 - Build a custom gcc toolchain for specific boards.
 - Have an all-in-one solution package that features IDE-like tools like linting, auto-completion, goto definition, etc.
 
-So after a bit of digging and a lot of frustration on how limited resources there were, I finally found some useful resources that I was able to put together and have it working. Here are my findings and how I was able to get myself up and running for my requirements. The development board I will be using is the TI TM4C129EXL microcontroller, but the steps on setup is very similiar for other microcontrollers like other TI, STM manufacturers. Here is a picture.
+So after a bit of digging and a lot of frustration on how limited resources there were, I finally found some useful
+resources that I was able to put together and have it working. Here are my findings and how I was able to get myself up
+and running for my requirements. The development board I will be using is the TI TM4C129EXL microcontroller, but the
+steps on setup is very similiar for other microcontrollers like other TI, STM manufacturers. Here is a picture.
 
 <img
   class="mx-auto w-full"
@@ -61,11 +66,16 @@ call plug#end()
 filetype plugin indent on
 ```
 
-Next, we reload vim and execute command `:PlugInstall` to install the plugins, and reloading vim should load our plugins.
+Next, we reload vim and execute command `:PlugInstall` to install the plugins, and reloading vim should load our
+plugins.
 
 ### Plugin configs and key bindings
 
-Now we add our global configs for our plugins. We want to make sure deoplete starts by default, supertab has an issue where it will tab complete from the bottom-top (although this is a feature in supertab) I like my tab completion from the top-bottom. Next we add our config for LanguageClient-neovim, the LSP server I will be using is `clangd`. The only binding I use is the goto definition, but you can add other bindings for LanguageClient-neovim more can found on their github repo.
+Now we add our global configs for our plugins. We want to make sure deoplete starts by default, supertab has an issue
+where it will tab complete from the bottom-top (although this is a feature in supertab) I like my tab completion from
+the top-bottom. Next we add our config for LanguageClient-neovim, the LSP server I will be using is `clangd`. The only
+binding I use is the goto definition, but you can add other bindings for LanguageClient-neovim more can found on their
+github repo.
 
 ```vim
 " --- Deoplete Options ---
@@ -85,7 +95,9 @@ nnoremap <F5> :call LanguageClient_contextMenu()<CR>
 nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
 ```
 
-This should be it on the vim side of things. In the next part I will show my setup of cmake and a template I usually use for developing for the TM4C microcontroller - which is just a blank template from their website but very helpful. Stay tuned for more.
+This should be it on the vim side of things. In the next part I will show my setup of cmake and a template I usually use
+for developing for the TM4C microcontroller - which is just a blank template from their website but very helpful. Stay
+tuned for more.
 
 [ref-1]: http://www.alexeyshmalko.com/2014/using-vim-as-c-cpp-ide/
 [neovim-link]: https://neovim.io/
