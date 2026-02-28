@@ -1,3 +1,3 @@
 # creativenull.dev
 
-My personal website, re-built with Nuxt 3.
+My personal website, built with Nuxt 4.
