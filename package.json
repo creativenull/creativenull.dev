@@ -23,11 +23,11 @@
   "devDependencies": {
     "@iconify-json/bi": "^1.2.7",
     "@iconify-json/logos": "^1.2.10",
-    "@iconify-json/simple-icons": "^1.2.71",
-    "@unocss/nuxt": "^66.6.2",
+    "@iconify-json/simple-icons": "^1.2.72",
+    "@unocss/nuxt": "^66.6.5",
     "prettier": "^3.8.1",
     "typescript": "^5.9.3",
-    "unocss": "^66.6.2"
+    "unocss": "^66.6.5"
   },
   "engines": {
     "node": ">=22.x"
