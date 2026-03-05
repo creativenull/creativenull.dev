@@ -35,5 +35,8 @@
   "prettier": {
     "printWidth": 120,
     "proseWrap": "always"
+  },
+  "overrides": {
+    "@rollup/plugin-terser": "1.0.0"
   }
 }
