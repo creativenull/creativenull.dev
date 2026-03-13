@@ -12,9 +12,9 @@ draft: false
 ---
 
 ::tip
-This is a two part series on how my vim is setup for embedded systems development. The first part shows what vim
-plugins I use and how I have them setup, while part two will cover the cmake portion on setting up a build workflow and
-a template.
+This is a two part series on how my vim is setup for embedded systems development. The first part shows what vim plugins
+I use and how I have them setup, while part two will cover the cmake portion on setting up a build workflow and a
+template.
 ::
 
 There has been a lot of tutorials on setting up vim for a Python/JavaScript/Java/C/C++ environment, but I did not find a
@@ -33,8 +33,8 @@ and running for my requirements. The development board I will be using is the TI
 steps on setup is very similiar for other microcontrollers like other TI, STM manufacturers. Here is a picture.
 
 <img
-  class="mx-auto w-full"
-  src="http://image.itmedia.co.jp/edn/articles/1509/27/ts150925_TI01.jpg"
+class="mx-auto w-full"
+src="http://image.itmedia.co.jp/edn/articles/1509/27/ts150925_TI01.jpg"
 />
 
 So the things to install (this might differ since my setup is on a Linux system):
