@@ -92,4 +92,10 @@ export default defineNuxtConfig({
       { name: "Righteous", provider: "bunny" },
     ],
   },
+
+  vite: {
+    optimizeDeps: {
+      include: ["@vue/devtools-core", "@vue/devtools-kit"],
+    },
+  },
 });
