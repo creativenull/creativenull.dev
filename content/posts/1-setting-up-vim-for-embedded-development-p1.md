@@ -11,9 +11,11 @@ publishDate: "2019-02-08 08:00"
 draft: false
 ---
 
-::tip This is a two part series on how my vim is setup for embedded systems development. The first part shows what vim
+::tip
+This is a two part series on how my vim is setup for embedded systems development. The first part shows what vim
 plugins I use and how I have them setup, while part two will cover the cmake portion on setting up a build workflow and
-a template. ::
+a template.
+::
 
 There has been a lot of tutorials on setting up vim for a Python/JavaScript/Java/C/C++ environment, but I did not find a
 variety of tutorials on how to setup a C/C++ environment for embedded development. I did, however, find one great post

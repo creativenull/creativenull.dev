@@ -18,7 +18,8 @@ While I wouldn't look for an alternative for a while (maybe in a year?) there ar
 post I will cover one alternative to null-ls called [efm-langserver][2] along with a helper plugin I created to help
 ease its setup.
 
-::tip There are also other options out there like: [nvim-lint][9], [formatter.nvim][10], [guard.nvim][11],
+::tip
+There are also other options out there like: [nvim-lint][9], [formatter.nvim][10], [guard.nvim][11],
 [diagnostic-languageserver][12] and many more that I'm not aware of. However, the focus here is only on efm-langserver.
 ::
 

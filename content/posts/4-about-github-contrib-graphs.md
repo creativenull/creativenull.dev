@@ -28,7 +28,9 @@ While the Github help page was very clear on how it would count your commits tow
 many commits refer to the color of the graph. Nor do any articles that cover this feature on their post. I would remind
 you that this was just a simple search on and I did not really go deep in my search.
 
-::tip See updated section below... ::
+::tip
+See updated section below...
+::
 
 ~~So observing my commits per day, I have compiled a small table below to show you how many commits refer to the color
 of the graph.~~
