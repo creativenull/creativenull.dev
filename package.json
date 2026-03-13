@@ -2,7 +2,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "fmt": "prettier --write ./**/*.{js,ts,vue,html,css}",
+    "fmt": "prettier --write ./**/*.{js,ts,vue,md,html,css}",
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
@@ -26,6 +26,7 @@
     "@iconify-json/simple-icons": "^1.2.73",
     "@unocss/nuxt": "^66.6.6",
     "prettier": "^3.8.1",
+    "prettier-plugin-mdc": "^0.2.1",
     "typescript": "^5.9.3",
     "unocss": "^66.6.6"
   },
@@ -34,7 +35,20 @@
   },
   "prettier": {
     "printWidth": 120,
-    "proseWrap": "always"
+    "proseWrap": "always",
+    "plugins": [
+      "prettier-plugin-mdc"
+    ],
+    "overrides": [
+      {
+        "files": [
+          "*.md"
+        ],
+        "options": {
+          "parser": "mdc"
+        }
+      }
+    ]
   },
   "overrides": {
     "@rollup/plugin-terser": "1.0.0"
