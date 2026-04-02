@@ -30,7 +30,7 @@ async function _fetchWeather(): Promise<string | null> {
     return cached;
   }
 
-  const data = await $fetch<string>(weatherApiUrl);
+  const data = await $fetch<string>(weatherApiUrl, { responseType: "text"});
 
   localStorage.setItem(weatherStorageKey, data);
   localStorage.setItem(weatherStorageExpiresKey, (new Date().getTime() + weatherTTL).toString());
