@@ -47,8 +47,6 @@ export default defineNuxtConfig({
     "/api/**": { cors: true },
   },
 
-  compatibilityDate: "2025-03-10",
-
   css: [
     "@unocss/reset/tailwind-compat.css",
     "~/assets/css/departure-mono.css",
@@ -101,4 +99,6 @@ export default defineNuxtConfig({
       include: ["@vue/devtools-core", "@vue/devtools-kit"],
     },
   },
+
+  compatibilityDate: '2026-03-30'
 });
