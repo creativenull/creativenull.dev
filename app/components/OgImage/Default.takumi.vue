@@ -1,7 +1,6 @@
 <script setup lang="ts">
-withDefaults(defineProps<{ title?: string; description?: string }>(), {
-  title: "title",
-  description: "",
+withDefaults(defineProps<{ title?: string; }>(), {
+  title: "Title",
 });
 </script>
 
@@ -9,7 +8,7 @@ withDefaults(defineProps<{ title?: string; description?: string }>(), {
   <div class="h-full w-full bg-gray-900 text-white">
     <div class="h-full flex flex-col justify-between p-10">
       <div>
-        <h1 class="text-[6rem]">
+        <h1 class="text-[6rem] font-roboto-serif">
           {{ title }}
         </h1>
       </div>

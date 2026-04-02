@@ -8,10 +8,10 @@ withDefaults(defineProps<{ title?: string; publishDate?: string }>(), {
 <template>
   <div class="h-full w-full bg-gray-900 text-white">
     <div class="h-full flex flex-col justify-between p-10">
-      <div>
-        <p class="text-[5rem]">
+      <div class="flex flex-col font-roboto-serif">
+        <h1 class="text-[5rem]">
           {{ title }}
-        </p>
+        </h1>
         <p class="text-[2rem]">
           {{ getHumanReadableDate(publishDate) }}
         </p>
