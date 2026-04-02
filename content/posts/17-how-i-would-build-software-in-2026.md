@@ -6,7 +6,7 @@ ogImage:
     publishDate: "2026-03-02 08:00"
 title: How I would build software in 2026
 description: A quick overview on how I used to build last year and what its going to look like in 2026
-tags: personal, software, eningeering, 2026
+tags: personal, software, engineering, 2026
 publishDate: "2026-03-02 08:00"
 draft: false
 ---
