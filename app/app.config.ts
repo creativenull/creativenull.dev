@@ -13,9 +13,9 @@ export default defineAppConfig({
         url: "https://github.com/creativenull",
       },
       {
-        name: "Bluesky",
-        iconClass: "light:i-logos-bluesky dark:i-simple-icons-bluesky",
-        url: "https://bsky.app/profile/creativenull.bsky.social",
+        name: "Twitter",
+        iconClass: "light:i-logos-x dark:i-simple-icons-twitter",
+        url: "https://twitter.com/creativenu11",
       },
       {
         name: "Mastodon",
@@ -23,9 +23,9 @@ export default defineAppConfig({
         url: "https://mastodon.online/@creativenull",
       },
       {
-        name: "Twitter",
-        iconClass: "light:i-logos-x dark:i-simple-icons-twitter",
-        url: "https://twitter.com/creativenu11",
+        name: "Bluesky",
+        iconClass: "light:i-logos-bluesky dark:i-simple-icons-bluesky",
+        url: "https://bsky.app/profile/creativenull.bsky.social",
       },
     ],
 
