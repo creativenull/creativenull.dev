@@ -2,6 +2,13 @@
 export default defineNuxtConfig({
   nitro: {
     compressPublicAssets: true,
+    typescript: {
+      tsConfig: {
+        compilerOptions: {
+          noUncheckedIndexedAccess: false,
+        },
+      },
+    },
   },
   site: {
     url: "http://localhost:3000",
