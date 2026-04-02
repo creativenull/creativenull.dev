@@ -1,7 +1,7 @@
 <script setup lang="ts">
 definePageMeta({ layout: "dashboard" });
 useHead({ title: "Home" });
-defineOgImageComponent("Home");
+defineOgImage("Home", { title: "Home" });
 
 const { loaded } = useFadeSlideLoadingState();
 </script>

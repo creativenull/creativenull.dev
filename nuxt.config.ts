@@ -63,11 +63,6 @@ export default defineNuxtConfig({
     },
   },
 
-  ogImage: {
-    fonts: ["Roboto"],
-    componentDirs: ["ogimages"],
-  },
-
   security: {
     headers: {
       contentSecurityPolicy: {
@@ -88,7 +83,8 @@ export default defineNuxtConfig({
   fonts: {
     families: [
       { name: "JetBrains Mono", provider: "bunny" },
-      { name: "Roboto", provider: "bunny" },
+      { name: "Roboto", provider: "bunny", global: true },
+      { name: "Roboto Serif", provider: "bunny", global: true },
       { name: "Righteous", provider: "bunny" },
     ],
   },

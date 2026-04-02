@@ -14,6 +14,7 @@ export default defineConfig({
       departure: "'Departure Mono', monospace",
       righteous: "'Righteous', cursive",
       roboto: "'Roboto', sans-serif",
+      "roboto-serif": "'Roboto Serif', serif",
     },
   },
   rules: [["font-departure", { "font-family": "'Departure Mono', monospace" }]],

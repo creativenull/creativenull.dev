@@ -13,7 +13,7 @@ if (!post.value) {
 }
 
 if (post.value?.ogImage) {
-  defineOgImage(post.value.ogImage);
+  defineOgImage("Post", { title: post.value.title, publishDate: post.value.ogImage.props.publishDate });
 }
 
 useHead({
@@ -32,7 +32,7 @@ useHead({
     <article class="prose prose-gray dark:prose-invert mx-auto">
       <Transition name="fade-slide">
         <div v-if="loaded">
-          <h1 v-if="post" class="text-2xl sm:text-4xl mb-0">{{ post.title }}</h1>
+          <h1 v-if="post" class="text-2xl sm:text-4xl mb-0 font-roboto-serif">{{ post.title }}</h1>
           <span v-if="post" class="text-xs">{{ getLocaleDate(post.publishDate) }}</span>
           <div v-if="post" class="inline-block text-xs ml-1">
             <span v-for="tag in getTagsFromString(post.tags)" :key="tag"> #{{ tag }} </span>

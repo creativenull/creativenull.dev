@@ -1,6 +1,6 @@
 <script setup lang="ts">
 useHead({ title: "Projects" });
-defineOgImageComponent("Default");
+defineOgImage("Default", { title: "Projects" });
 
 const { data: projects } = await useAsyncData("/content/projects", async () => await queryCollection("projects").all());
 </script>

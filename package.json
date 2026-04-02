@@ -14,9 +14,10 @@
     "@nuxt/content": "^3.12.0",
     "@nuxt/fonts": "^0.14.0",
     "@nuxt/image": "^2.0.0",
+    "@takumi-rs/core": "^1.0.0-rc.12",
     "better-sqlite3": "^12.6.2",
     "nuxt": "^4.4.2",
-    "nuxt-og-image": "^5.1.13",
+    "nuxt-og-image": "^6.3.2",
     "nuxt-security": "^2.5.1",
     "sitemap": "^9.0.1"
   },

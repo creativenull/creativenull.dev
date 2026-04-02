@@ -1,5 +1,6 @@
 <script setup lang="ts">
 useHead({ title: "Posts" });
+defineOgImage("Default", { title: "Posts" });
 
 const { data: posts } = await useAsyncData(
   "/content/posts",
