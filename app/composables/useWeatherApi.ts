@@ -23,6 +23,21 @@ function getCachedWeather() {
   return item;
 }
 
+/**
+ * There was a change in service. Now making a request from the browser will
+ * respond with plain HTML instead of plain text.
+ */
+function parseHtml(plainText: string): string {
+  const parser = new DOMParser();
+  const doc = parser.parseFromString(plainText, "text/html");
+  if (!doc) return "N/A";
+
+  const weatherData = doc.querySelector(".term-container")?.textContent;
+  if (!weatherData) return "N/A";
+
+  return weatherData;
+}
+
 async function _fetchWeather(): Promise<string | null> {
   const cached = getCachedWeather();
 
@@ -30,12 +45,13 @@ async function _fetchWeather(): Promise<string | null> {
     return cached;
   }
 
-  const data = await $fetch<string>(weatherApiUrl, { responseType: "text"});
+  const data = await $fetch<string>(weatherApiUrl, { responseType: "text" });
+  const weatherData = parseHtml(data);
 
-  localStorage.setItem(weatherStorageKey, data);
+  localStorage.setItem(weatherStorageKey, weatherData);
   localStorage.setItem(weatherStorageExpiresKey, (new Date().getTime() + weatherTTL).toString());
 
-  return data;
+  return weatherData;
 }
 
 export function useWeatherApi() {
