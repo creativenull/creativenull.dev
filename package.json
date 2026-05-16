@@ -16,22 +16,22 @@
     "@nuxt/fonts": "^0.14.0",
     "@nuxt/image": "^2.0.0",
     "@takumi-rs/core": "^1.1.2",
-    "better-sqlite3": "^12.9.0",
-    "nuxt": "^4.4.2",
-    "nuxt-og-image": "^6.4.8",
-    "nuxt-security": "^2.5.1",
+    "better-sqlite3": "^12.10.0",
+    "nuxt": "^4.4.5",
+    "nuxt-og-image": "^6.5.0",
+    "nuxt-security": "^2.6.0",
     "sitemap": "^9.0.1"
   },
   "devDependencies": {
     "@iconify-json/bi": "^1.2.7",
     "@iconify-json/logos": "^1.2.11",
-    "@iconify-json/simple-icons": "^1.2.80",
+    "@iconify-json/simple-icons": "^1.2.82",
     "@unocss/nuxt": "^66.6.8",
     "prettier": "^3.8.3",
     "prettier-plugin-mdc": "^0.2.1",
     "typescript": "^6.0.3",
     "unocss": "^66.6.8",
-    "vue-tsc": "^3.2.7"
+    "vue-tsc": "^3.2.9"
   },
   "engines": {
     "node": ">=22.x"
