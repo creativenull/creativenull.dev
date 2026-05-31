@@ -15,7 +15,7 @@
     "@nuxt/content": "^3.14.0",
     "@nuxt/fonts": "^0.14.0",
     "@nuxt/image": "^2.0.0",
-    "@takumi-rs/core": "^1.5.1",
+    "@takumi-rs/core": "^1.6.0",
     "better-sqlite3": "^12.10.0",
     "nuxt": "^4.4.6",
     "nuxt-og-image": "^6.5.1",
@@ -25,13 +25,13 @@
   "devDependencies": {
     "@iconify-json/bi": "^1.2.7",
     "@iconify-json/logos": "^1.2.11",
-    "@iconify-json/simple-icons": "^1.2.83",
+    "@iconify-json/simple-icons": "^1.2.84",
     "@unocss/nuxt": "^66.7.0",
     "prettier": "^3.8.3",
     "prettier-plugin-mdc": "^0.2.1",
     "typescript": "^6.0.3",
     "unocss": "^66.7.0",
-    "vue-tsc": "^3.3.1"
+    "vue-tsc": "^3.3.3"
   },
   "engines": {
     "node": ">=22.x"
