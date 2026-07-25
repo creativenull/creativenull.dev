@@ -12,26 +12,26 @@
     "typecheck": "nuxt typecheck"
   },
   "dependencies": {
-    "@nuxt/content": "^3.15.0",
+    "@nuxt/content": "^3.15.2",
     "@nuxt/fonts": "^0.14.0",
     "@nuxt/image": "^2.0.0",
     "@takumi-rs/core": "^1.8.7",
     "better-sqlite3": "^12.11.1",
-    "nuxt": "^4.4.8",
-    "nuxt-og-image": "^6.7.2",
+    "nuxt": "^4.5.0",
+    "nuxt-og-image": "^6.7.4",
     "nuxt-security": "^2.6.0",
     "sitemap": "^9.0.1"
   },
   "devDependencies": {
     "@iconify-json/bi": "^1.2.7",
     "@iconify-json/logos": "^1.2.11",
-    "@iconify-json/simple-icons": "^1.2.89",
+    "@iconify-json/simple-icons": "^1.2.91",
     "@unocss/nuxt": "^66.7.5",
-    "prettier": "^3.9.5",
+    "prettier": "^3.9.6",
     "prettier-plugin-mdc": "^0.2.1",
     "typescript": "^6.0.3",
     "unocss": "^66.7.5",
-    "vue-tsc": "^3.3.7"
+    "vue-tsc": "^3.3.8"
   },
   "engines": {
     "node": ">=22.x"
