@@ -55,6 +55,9 @@ export default defineNuxtConfig({
   ],
 
   content: {
+    experimental: {
+      sqliteConnector: "native",
+    },
     build: {
       markdown: {
         highlight: {
@@ -100,5 +103,5 @@ export default defineNuxtConfig({
     },
   },
 
-  compatibilityDate: '2026-03-30'
+  compatibilityDate: "2026-03-30",
 });
