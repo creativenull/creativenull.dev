@@ -10,10 +10,8 @@ const { data: recentPosts } = await useAsyncData(
     <h2 class="text-xl text-sky-700 underline underline-offset-8 font-departure">Recent posts</h2>
     <div class="font-roboto space-y-4">
       <div v-for="post in recentPosts" :key="post.path" class="space-y-1">
-        <div class="text-lg">
-          <span class="text-gray-600 dark:text-gray-400"> {{ getLocaleDate(post.publishDate) }}&nbsp; </span>
-
-          <h2 class="inline-block">
+        <div>
+          <h2 class="inline-block text-lg">
             <NuxtLink
               :to="post.path"
               class="underline rounded hover:(text-sky-600 underline) transition duration-200 focus:(outline-none ring-1 ring-gray-800) dark:focus:(ring-white)"
@@ -22,6 +20,12 @@ const { data: recentPosts } = await useAsyncData(
               {{ post.title }}
             </NuxtLink>
           </h2>
+          <span class="text-gray-600 dark:text-gray-400 hidden sm:inline">
+            &nbsp;&mdash;&nbsp;
+          </span>
+          <h4 class="text-gray-600 dark:text-gray-400 text-sm sm:inline">
+            {{ getLocaleDate(post.publishDate) }}
+          </h4>
         </div>
         <p class="text-sm text-gray-600 dark:text-gray-400">
           {{ getTruncatedDescription(post.description ?? "") }}
