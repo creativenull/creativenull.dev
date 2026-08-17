@@ -20,9 +20,7 @@ const { data: recentPosts } = await useAsyncData(
               {{ post.title }}
             </NuxtLink>
           </h2>
-          <span class="text-gray-600 dark:text-gray-400 hidden sm:inline">
-            &nbsp;&mdash;&nbsp;
-          </span>
+          <span class="text-gray-600 dark:text-gray-400 hidden sm:inline"> &nbsp;&mdash;&nbsp; </span>
           <h4 class="text-gray-600 dark:text-gray-400 text-sm sm:inline">
             {{ getLocaleDate(post.publishDate) }}
           </h4>
