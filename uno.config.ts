@@ -27,6 +27,9 @@ export default defineConfig({
     presetIcons(),
     presetTypography({
       cssExtend: {
+        "ul li::marker": {
+          color: "var(--un-prose-body)",
+        },
         strong: {
           "--at-apply": "font-bold",
         },
