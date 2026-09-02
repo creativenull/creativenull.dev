@@ -24,9 +24,8 @@ const socials = appConfig.site.socials.filter((s) => s.name !== "GitHub");
     <div class="my-4">
       <h6 class="text-sm font-jetbrains">whoami</h6>
       <p class="text-sm my-1">
-        A freelance software developer from Trinidad and Tobago 🇹🇹 who is passionate about software development and
-        open-source work and maybe a
-        <em>tad bit</em> obsessed with tweaking my vim configuration.
+        I am a self-employed software developer from Trinidad &amp; Tobago 🇹🇹. working with Laravel and Vue
+        applications. I am passionate about open-source and maybe a bit obsessed with configuring vim.
       </p>
     </div>
 
