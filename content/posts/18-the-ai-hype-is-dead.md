@@ -4,7 +4,7 @@ ogImage:
   component: Post
   props:
     publishDate: "2026-04-02 11:00"
-title: The AI hype is dead (for me)
+title: The AI hype is dead (for me at least)
 description: It has been 3 months since I started actively using AI in my work.
 tags: personal, software, engineering, 2026
 publishDate: "2026-04-02 11:00"
