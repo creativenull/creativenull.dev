@@ -53,6 +53,8 @@
     ]
   },
   "overrides": {
-    "@rollup/plugin-terser": "1.0.0"
+    "@rollup/plugin-terser": "1.0.0",
+    "zod": ">=4.6.6",
+    "katex": ">=0.18.2"
   }
 }
