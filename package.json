@@ -12,24 +12,24 @@
     "typecheck": "nuxt typecheck"
   },
   "dependencies": {
-    "@nuxt/content": "^3.16.2",
+    "@nuxt/content": "^3.17.0",
     "@nuxt/fonts": "^1.2.0",
     "@nuxt/image": "^2.2.1",
-    "@takumi-rs/core": "^2.19.0",
-    "nuxt": "^4.6.3",
+    "@takumi-rs/core": "^2.22.1",
+    "nuxt": "^4.6.4",
     "nuxt-og-image": "^7.0.7",
     "nuxt-security": "^2.7.0",
     "sitemap": "^10.0.0"
   },
   "devDependencies": {
     "@iconify-json/bi": "^1.2.7",
-    "@iconify-json/logos": "^1.2.18",
-    "@iconify-json/simple-icons": "^1.2.101",
-    "@unocss/nuxt": "^66.12.0",
-    "prettier": "^3.9.10",
+    "@iconify-json/logos": "^1.2.20",
+    "@iconify-json/simple-icons": "^1.2.103",
+    "@unocss/nuxt": "^66.13.0",
+    "prettier": "^3.10.1",
     "prettier-plugin-mdc": "^0.2.1",
     "typescript": "^7.0.2",
-    "unocss": "^66.12.0",
+    "unocss": "^66.13.0",
     "vue-tsc": "^3.3.14"
   },
   "engines": {
@@ -54,7 +54,7 @@
   },
   "overrides": {
     "@rollup/plugin-terser": "1.0.0",
-    "zod": ">=4.6.6",
-    "katex": ">=0.18.2"
+    "katex": ">=0.19.1",
+    "zod": ">=4.6.7"
   }
 }
